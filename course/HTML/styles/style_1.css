@@ -1,0 +1,32 @@
+#tag_fig{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.solid_table{
+    margin: auto;
+    border: solid;
+    text-align: center;
+}
+.solid_table td{
+    padding: 5px;
+}
+
+#multimedia_tag{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+}
+#multimedia_tag figure{
+    width: 140px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f8f8f8;
+    box-shadow: 1px 1px 5px #ccc;
+    text-align: center;
+}
+#multimedia_tag figcaption{
+    margin: 5px;
+    font-style: italic;
+    color: #777;
+}

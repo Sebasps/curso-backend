@@ -1,0 +1,25 @@
+.code_box{
+    border: 1px solid black;
+    padding: 15px;
+    overflow: auto;
+    background: black;
+    color: white;
+}
+.label_color{
+    color: deeppink;
+}
+.attribute_color{
+    color: greenyellow;
+}
+.value_color{
+    color: khaki;
+}
+.comment_color{
+    color: grey;
+}
+.style_color{
+    color: aqua;
+}
+.value_style_color{
+    color: mediumpurple;
+}

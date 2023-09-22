@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Enlaces y formularios</title>
+    <link rel="shortcut icon" href="images/icon_html5.png"/>
+    <link rel="stylesheet" href="../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/style_3.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="2. listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="#">Enlaces y formularios</a></li>
+                                <li><a href="4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../CSS/estilos.html">CSS</a></li>
+                        <li><a href="#">JS</a></li>                 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Enlaces y formularios</h1>
+            <section>       
+                <h2>Enlaces</h2>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta de enlaces--&gt;</span>
+<span class="comment_color">&lt;!--target="_blank"--&gt;</span>
+&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"Enlace_externo o Enlace interno"</span> <span class="attribute_color">target</span>=<span class="value_color">"Forma de apertura"</span>&gt;Apariencia&lt;/<span class="label_color">a</span>&gt;
+<span class="comment_color">&lt;!--Enlaces internos--&gt;</span>
+&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"Enlace_interno#id"</span></span>&gt;Apariencia&lt;/<span class="label_color">a</span>&gt;
+</pre>
+                
+                <table id="links">
+                    <tr>
+                        <th>Enlace externo</th>
+                        <th>Ruta local</th>
+                        <th>Enlace interno</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/" target="_blank">YouTube</a></td>
+                        <td><a href="../index.html">Inicio</a></td>
+                        <td><a href="3. enlaces-formularios.html#forms">Formularios</a></td>
+                    </tr>
+                </table>
+                
+            </section>
+
+            <section>
+                <h2 id="forms">Formularios</h2>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta de formulario--&gt;</span>
+&lt;<span class="label_color">form</span>&gt;
+    <span class="comment_color">&lt;!--Representa una etiqueta--&gt;</span>
+    &lt;<span class="label_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Texto a mostrar&lt;/<span class="label_color">label</span>&gt;
+    <span class="comment_color">&lt;!--Entrada de formulario--&gt;</span>
+    <span class="comment_color">&lt;!--type="text, number, date, email, password, checkbox, radio, file, button, submit"--&gt;</span>
+    <span class="comment_color">&lt;!--placeholder="Texto informativo"--&gt;</span>
+    &lt;<span class="label_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"Tipo de entrada de formulario"</span>&gt;
+    <span class="comment_color">&lt;!--Menú de opciones--&gt;</span>
+    &lt;<span class="label_color">select</span>&gt;
+        <span class="comment_color">&lt;!--Elemento representativo de opción--&gt;</span>
+        &lt;<span class="label_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"Opción 0 interna"</span>&gt;Opción 0 a mostrar&lt;/<span class="label_color">option</span>&gt;
+        &lt;<span class="label_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"Opción 1 interna"</span>&gt;Opción 1 a mostrar&lt;/<span class="label_color">option</span>&gt;
+        &lt;<span class="label_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"Opción 2 interna"</span>&gt;Opción 2 a mostrar&lt;/<span class="label_color">option</span>&gt;
+    &lt;/<span class="label_color">select</span>&gt;
+    <span class="comment_color">&lt;!--Area de texto--&gt;</span>
+    &lt;<span class="label_color">textarea</span> <span class="attribute_color">cols</span>=<span class="value_color">"Ancho"</span> <span class="attribute_color">rows</span>=<span class="value_color">"Alto"</span>&gt;&lt;/<span class="label_color">textarea</span>&gt;
+&lt;/<span class="label_color">form</span>&gt;
+</pre>
+
+                <form>
+                    <table class="solid_table">
+                        <tr>
+                            <td>
+                                <label for="">Etiqueta</label>
+                                <br><br>
+                                <input type="text" placeholder="Ingrese un texto">
+                                <br><br>
+                                <select>
+                                    <option value="0">Elija una opción</option>
+                                    <option value="1">Opción 1</option>
+                                    <option value="2">Opción 2</option>
+                                </select>
+                            </td>
+                            <td><textarea cols="20" rows="5" placeholder="Ingrese un texto"></textarea></td>        
+                            <td>
+                                <label for="">Opción 1</label>
+                                <input type="radio" name="Opción 1">
+                                <label for="">Opción 2</label>
+                                <input type="radio" name="Opción 1">
+                                <br><br>
+                                <label for="">Acepto</label>
+                                <input type="checkbox">
+                                <br><br>
+                                <input type="submit" value="Enviar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

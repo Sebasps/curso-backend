@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pagina informativa sobre etiquetas de texto y multimedia">
+    <meta name="keywords" content="etiqueta, html, texto, multimedia, backend, web">
+    <title>Etiquetas texto y multimedia</title>
+    <link rel="shortcut icon" href="images/icon_html5.png"/>
+    <link rel="stylesheet" href="../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/style_1.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="#">Texto y multimedia</a></li>
+                                <li><a href="2. listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="3. enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../CSS/estilos.html">CSS</a></li>
+                        <li><a href="#">JS</a></li>                 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section>
+                <h1>HTML (HyperText Markup language)</h1>
+                <p>El HTML se utiliza para crear paginas web por medio de etiquetas estructurando los elementos que las componen, las cuales son interpretadas por el navegador permitiendo su visualización segun como se hayan organizado.</p>
+                <h2>Etiquetas</h2>
+                <p>Las etiquetas delimitan un fragmento de contenido para darle un proposito en el sitio web.</p>
+
+                <figure id="tag_fig">
+                    <img src="images/tag_structure.png" alt="Componentes tiqueta">
+                    <figcaption>El elemento lo conforman la etiqueta de apertura, seguida del contenido, seguido de la etiqueta de cierre.</figcaption>
+                </figure>
+
+                <table border="solid">
+                    <tr><th colspan="4">Componentes de las etiquetas</th></tr>
+                    <tr>
+                        <td>Elemento</td>
+                        <td>Etiqueta de apertura</td>
+                        <td>Etiqueta de cierre</td>
+                        <td>Contenido</td>
+                    </tr>
+                    <tr>
+                        <td>Hace parte de la página.</td>
+                        <td>Consiste en el inicio del elemento.</td>
+                        <td>Consiste en el fin del elemento.</td>
+                        <td>Contenido del elemento.</td>
+                    </tr>
+                </table>
+
+                <h2>Estructura HTML</h2>
+
+<pre class="code_box">
+&lt;<span class="label_color">html</span>&gt;
+    &lt;<span class="label_color">head</span>&gt;
+        <span class="comment_color">&lt;!--Cabeza del sitio web--&gt;</span>
+    &lt;<span class="label_color">/head</span>&gt;
+    &lt;<span class="label_color">body</span>&gt;
+        <span class="comment_color">&lt;!--Cuerpo del sitio web--&gt;</span>
+    &lt;<span class="label_color">/body</span>&gt;
+&lt;<span class="label_color">/html</span>&gt;
+</pre>
+
+            </section>
+
+            <section>
+                <h2>Etiquetas de encabezados</h2>
+                <p>Solo debe haber una etiqueta <code>&lt;h1&gt;</code> por cada documento HTML.</p>
+
+<pre class="code_box">
+&lt;<span class="label_color">h1</span>&gt;Encabezado principal del sitio web&lt;/<span class="label_color">h1</span>&gt;
+&lt;<span class="label_color">h2</span>&gt;Encabezado de segundo nivel&lt;/<span class="label_color">h2</span>&gt;
+&lt;<span class="label_color">h3</span>&gt;Encabezado de tercer nivel&lt;/<span class="label_color">h3</span>&gt;
+&lt;<span class="label_color">h4</span>&gt;Encabezado de cuarto nivel&lt;/<span class="label_color">h4</span>&gt;
+&lt;<span class="label_color">h5</span>&gt;Encabezado de quinto nivel&lt;/<span class="label_color">h5</span>&gt;
+&lt;<span class="label_color">h6</span>&gt;Encabezado de sexto nivel&lt;/<span class="label_color">h6</span>&gt;
+</pre>
+
+                <ul>
+                    <h2><li>Encabezado de segundo nivel</li></h2>
+                    <h3><li>Encabezado de tercer nivel</li></h3>
+                    <h4><li>Encabezado de cuarto</li></h4>
+                    <h5><li>Encabezado de quinto nivel</li></h5>
+                    <h6><li>Encabezado de sexto nivel</li></h6>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Etiquetas de texto</h2>
+
+<pre class="code_box">
+&lt;<span class="label_color">p</span>&gt;Parrafo&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">p</span>&gt;&lt;<span class="label_color">b</span>&gt;Negrilla&lt;/<span class="label_color">b</span>&gt;&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">p</span>&gt;&lt;<span class="label_color">i</span>&gt;Cursiva&lt;/<span class="label_color">i</span>&gt;&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">p</span>&gt;&lt;<span class="label_color">u</span>&gt;Subrayado&lt;/<span class="label_color">u</span>&gt;&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">p</span>&gt;&lt;<span class="label_color">mark</span>&gt;Resaltado&lt;/<span class="label_color">mark</span>&gt;&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">p</span>&gt;salto&lt;<span class="label_color">br</span>&gt;linea&lt;/<span class="label_color">p</span>&gt;
+&lt;<span class="label_color">hr</span>&gt;
+</pre>
+                
+                <table class="solid_table">
+                    <tr>
+                        <td>Parrafo</td>
+                        <td><b>Negrilla</b></td>
+                        <td><i>Cursiva</i></td>
+                    </tr>
+                    <tr>
+                        <td><u>Subrayado</u></td>
+                        <td><mark>Resaltado</mark></td>
+                        <td>Salto<br>linea</p></td>
+                    </tr>
+                    <tr><td colspan="3"><hr></td></tr>
+                </table>           
+            </section>
+
+            <section>
+                <h2>Etiquetas multimedia</h2>
+                <p>Los elementos multimedia deben ir dentro de una etiqueta <code>&lt;figure&gt;</code>.</p>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta contenedor de figuras--&gt;</span>
+&lt;<span class="label_color">figure</span>&gt;
+    <span class="comment_color">&lt;!--Etiqueta de imagen--&gt;</span>
+    <span class="comment_color">&lt;!--width="Ancho" - height="Alto" (px - #%)--&gt;</span>
+    &lt;<span class="label_color">img</span> <span style="color: greenyellow;">src</span>=<span class="value_color">"Fuente"</span> <span style="color: greenyellow;">alt</span>=<span class="value_color">"Texto alternativo"</span>&gt;
+    &lt;<span class="label_color">figcaption</span>&gt;Descripción figura&lt;/<span class="label_color">figcaption</span>&gt;
+    <span class="comment_color">&lt;!--Etiqueta de contenido web--&gt;</span>
+    &lt;<span class="label_color">iframe</span> Contenido web embebido&gt;&lt;/<span class="label_color">iframe</span>&gt;
+    <span class="comment_color">&lt;!--Etiqueta de audio--&gt;</span>
+    &lt;<span class="label_color">audio</span>&gt;&lt;/<span class="label_color">audio</span>&gt;
+&lt;/<span class="label_color">figure</span>&gt;
+</pre>
+    
+                <figure id="multimedia_tag">
+                    <figure>
+                        <img src="images/icon_html5.png" alt="HTML5">
+                        <figcaption>Logo de HTML5.<br>(Enlace funcional)</figcaption>
+                    </figure>  
+                    <figure>
+                        <img src="images/icon_html.png" alt="HTML5">
+                        <figcaption>Logo de HTML5.<br>(Enlace dañado)</figcaption>
+                    </figure>
+                </figure>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w?si=4vFxRr9SoxpBEEWJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </figure>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

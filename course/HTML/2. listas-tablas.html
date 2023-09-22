@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Listas y tablas</title>
+    <link rel="shortcut icon" href="images/icon_html5.png"/>
+    <link rel="stylesheet" href="../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/style_2.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="#">Listas y tablas</a></li>
+                                <li><a href="3. enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../CSS/estilos.html">CSS</a></li>
+                        <li><a href="#">JS</a></li>                 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Listas y tablas</h1>
+            <section>
+                <h2>Listas</h2>
+                <h3>Listas ordenadas</h3>
+                <p>Las listas ordenadas son las listas que muestran los elementos en un orden</p>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta de listas ordenadas--&gt;</span>
+<span class="comment_color">&lt;!--type="A,a,I,i"--&gt;</span>
+&lt;<span class="label_color">ol</span>&gt;
+<span class="comment_color">&lt;!--Etiqueta para agregar elementos--&gt;</span>
+&lt;<span class="label_color">li</span>&gt;Elemento uno&lt;/<span class="label_color">li</span>&gt;
+    &lt;<span class="label_color">ol</span>&gt;
+        &lt;<span class="label_color">li</span>&gt;Subelemento uno&lt;/<span class="label_color">li</span>&gt;
+        &lt;<span class="label_color">li</span>&gt;Subelemento dos&lt;/<span class="label_color">li</span>&gt;
+    &lt;/<span class="label_color">ol</span>&gt;
+&lt;<span class="label_color">li</span>&gt;Elemento dos&lt;/<span class="label_color">li</span>&gt;
+&lt;/<span class="label_color">ol</span>&gt;
+</pre>
+
+                <ol>
+                    <li>Elemento uno</li>
+                        <ol>
+                            <li>Subelemento uno</li>
+                            <li>Subelemento dos</li>
+                        </ol>
+                    <li>Elemento dos</li>
+                </ol>
+
+                <h3>Listas desordenadas</h3>
+                <p>Las listas desordenadas sirven para mostrar o listar elementos sin un orden.</p>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta de listas desordenadas--&gt;</span>
+<span class="comment_color">&lt;!--type="circle,disc,square"--&gt;</span>
+&lt;<span class="label_color">ul</span>&gt;
+    &lt;<span class="label_color">li</span>&gt;Elemento uno&lt;/<span class="label_color">li</span>&gt;
+    &lt;<span class="label_color">li</span>&gt;Elemento dos&lt;/<span class="label_color">li</span>&gt;
+&lt;/<span class="label_color">ul</span>&gt;
+</pre>
+
+                <ul>
+                    <li>Elemento uno</li>
+                    <li>Elemento dos</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Tablas</h2>
+                <p>Una tabla es una herramienta para organizar la informacion en filas y columnas.</p>
+
+<pre class="code_box">
+<span class="comment_color">&lt;!--Etiqueta de tablas--&gt;</span>
+<span class="comment_color">&lt;!--border="solid"--&gt;</span>
+<span class="comment_color">&lt;!--valign="top, middle, bottom"--&gt;</span>
+&lt;<span class="label_color">table</span>&gt;
+<span class="comment_color">&lt;!--Representa filas--&gt;</span>
+&lt;<span class="label_color">tr</span>&gt;
+    <span class="comment_color">&lt;!--Representa encabezados--&gt;</span>
+    &lt;<span class="label_color">th</span>&gt;Titulo 1&lt;/<span class="label_color">th</span>&gt;
+    &lt;<span class="label_color">th</span>&gt;Titulo 2&lt;/<span class="label_color">th</span>&gt;
+&lt;/<span class="label_color">tr</span>&gt;
+&lt;<span class="label_color">tr</span>&gt;
+    <span class="comment_color">&lt;!--Representa columnas--&gt;</span>
+    &lt;<span class="label_color">td</span>&gt;Celda 1&lt;/<span class="label_color">td</span>&gt;
+    &lt;<span class="label_color">td</span>&gt;Celda 2&lt;/<span class="label_color">td</span>&gt;
+&lt;/<span class="label_color">tr</span>&gt;
+&lt;/<span class="label_color">table</span>&gt;
+</pre>
+
+                <table border="solid">
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                    </tr>
+                    <tr>
+                        <td>Celda 1</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 3</td>
+                        <td>Celda 4</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

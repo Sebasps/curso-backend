@@ -1,0 +1,16 @@
+#links{
+    margin: auto;
+    text-align: center;
+}
+#links th{
+    padding: 5px 20px;
+}
+
+.solid_table{
+    margin: auto;
+    border: solid;
+    text-align: center;
+}
+.solid_table td{
+    padding: 5px;
+}

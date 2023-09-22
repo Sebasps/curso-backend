@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Formulario de registro</title>
+    <link rel="shortcut icon" href="../images/icon_html5.png"/>
+    <link rel="stylesheet" href="../../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../../styles/code_style.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="../1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="../2. listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="../3. enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="../4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../CSS/estilos.html">CSS</a></li>
+                        <li><a href="#">JS</a></li>                 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Inicio de sesión</h2>
+                <form>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                    <label for="">Contraseña</label>
+                    <input type="password">
+                    <input type="submit" value="Iniciar sesión"><br>
+                </form>
+            <h2>Formulario de registro</h1>
+
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="">Nombre</label></td>
+                        <td><label for="">Apellido</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" required></td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Tipo de documento</label></td>
+                        <td><label for="">Documento</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select required>
+                                <option value=""></option>
+                                <option value="RC">Registro civil</option>
+                                <option value="TI">Tarjeta de identidad</option>
+                                <option value="CC">Cedula de ciudadania</option>
+                            </select>
+                        </td>
+                        <td><input type="number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Fecha de nacimiento</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Correo electrónico</label></td>
+                        <td><label for="">Repetir correo electrónico</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" required><br></td>
+                        <td><input type="email" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Contraseña</label></td>
+                        <td><label for="">Repetir contraseña</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" required><br></td>
+                        <td><input type="password" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" required>Acepto terminos <br> y condiciones.</td>
+                        <td><input type="submit" value="Registrarse"></td>
+                    </tr>
+                </table>
+
+            <h2>Posible solución</h2>
+            
+        </section>
+    </main>
+</body>
+</html>

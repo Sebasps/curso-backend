@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>CSS</title>
+    <link rel="shortcut icon" href="images/icons_css3.png"/>
+    <link rel="stylesheet" href="../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="../HTML/1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="../HTML/2. listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="../HTML/3. enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="../HTML/4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="../HTML/exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>                 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section>
+                <h2>Selectores</h2>
+                <table border="solid">
+                    <tr>
+                        <th>Selector</th>
+                        <th>Descripción</th>
+                        <th>Identificación</th>
+                        <th>Utilización</th>
+                    </tr>
+                    <tr>
+                        <td>Etiqueta</td>
+                        <td>Hace referencia a cualquier elemento que posea la misma etiqueta.</td>
+                        <td><code>&lt;etiqueta&gt;</code></td>
+                        <td><code>etiqueta{}</code></td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
+                        <td><code>&lt;etiqueta id="name_id"&gt;</code></td>
+                        <td><code>#name_id{}</code></td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>Las clases se pueden utilizar en multiples elementos.</td>
+                        <td><code>&lt;etiqueta class="name_class"&gt;</code></td>
+                        <td><code>.name_class{}</code></td>
+                    </tr>
+                </table>
+
+                <h2>Tipografía</h2>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Utilización</th>
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td>Cambia el tipo de letra del texto.</td>
+                        <td rowspan="3">
+                            <code>
+                                selector{<br>
+                                    font-family: name;<br>
+                                    font-size: size (px);<br>
+                                    color: (#hex || name);<br>
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>Cambia el tamaño de letra del texto.</td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>Cambia el color del texto.</td>
+                    </tr>
+                </table>
+
+                <h2>Background</h2>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Utilización</th>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Color de fondo.</td>
+                        <td rowspan="5">
+                            <code>
+                                selector{<br>
+                                    background-color: (#hex || name);<br>
+                                    background-image: url(“...”);<br>
+                                    background-position: position;<br>
+                                    background-size: size;<br>
+                                    background-repeat: ;<br>
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>background-image</td>
+                        <td>Imagen de fondo.</td>
+                    </tr>
+                    <tr>
+                        <td>background-position</td>
+                        <td>Posición del fondo.</td>
+                    </tr>
+                    <tr>
+                        <td>background-size</td>
+                        <td>Tamaño del fondo.</td>
+                    </tr>
+                    <tr>
+                        <td>background-repeat</td>
+                        <td>Repetición del fondo.</td>
+                    </tr>
+                </table>
+
+                <h2>Estilos de texto</h2>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Utilización</th>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>Alineación del texto.</td>
+                        <td rowspan="6">
+                            <code>
+                                selector{<br>
+                                    text-align: align;<br>
+                                    text-decoration: decoration;<br>
+                                    text-transform: transform;<br>
+                                    text-indent: indent (px);<br>   
+                                    letter-spacing: spacing (px);<br>
+                                    line-height: height;}<br>
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>text-decoration</td>
+                        <td>Estilos del texto.</td>
+                    </tr>
+                    <tr>
+                        <td>text-transform</td>
+                        <td>Transformación del texto.</td>
+                    </tr>
+                    <tr>
+                        <td>text-indent</td>
+                        <td>Identación.</td>
+                    </tr>
+                    <tr>
+                        <td>letter-spacing</td>
+                        <td>Espacio entre letras.</td>
+                    </tr>
+                    <tr>
+                        <td>line-height</td>
+                        <td>Espacio entre líneas.</td>
+                    </tr>
+                </table>
+
+                <h2>Modelo de caja</h2>
+                <figure id="box_model">
+                    <img src="" alt="Modelo caja">
+                    <figcaption>.</figcaption>
+                </figure>
+
+
+            </section>
+        </section>
+    </main>
+</body>
+</html>
