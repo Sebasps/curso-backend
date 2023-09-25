@@ -1,5 +1,7 @@
 #links{
     margin: auto;
+    border: solid;
+    padding: 10px 0px;
     text-align: center;
 }
 #links th{

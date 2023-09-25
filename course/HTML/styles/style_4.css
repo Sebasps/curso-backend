@@ -1,19 +1,31 @@
+table{
+    margin: auto;
+}
+
+#parrafos{
+    width: fit-content;
+    margin: auto;
+    border: solid;
+    padding: 15px;
+}
 #parrafoUnico{
+    margin: auto;
     background-color: darkblue;
     font-size: 20px;
     color: tomato;
     text-align: center;
 }
-#parrafoMultiple{
+.parrafoMultiple{
+    margin: auto;
     background-color: turquoise;
+    text-align: center;
     font-size: 15px;
     color: purple;
-    text-align: center;
 }
 
 #header_example{
-    background-color: skyblue;
     border: solid;
+    background-color: skyblue;
 }
 #header_example figure{
     display: inline-block;
@@ -21,9 +33,9 @@
 #header_example h3{
     display: inline-block;
     margin: 0px;
+    text-align: center;
     font-family: sans-serif;
     font-size: 30px;
-    text-align: center;
     color: purple;
 }
 #header_example nav{
@@ -44,16 +56,29 @@
     color: white;
 }
 
+#test_page{
+    border-left: solid;
+    border-right: solid;
+    padding: 20px;
+}
+#test_page_f{
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    padding: 20px;
+    font-style: italic;
+}
+
 form{
-    margin: auto;
-    padding: 15px 25px;
     width: 200px;
+    margin: auto;
+    border: solid;
+    padding: 15px 25px;
     display: grid;
     grid-template-columns: 35% 70%;
     gap: 0.5em;
     justify-content: center;
-    border: solid;
 }
 form #send{
     grid-column: 1/3;
-}
+

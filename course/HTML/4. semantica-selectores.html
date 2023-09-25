@@ -52,14 +52,14 @@
                     <tr>
                         <td>ID</td>
                         <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
-                        <td><code>&lt;etiqueta id="name_id"&gt;</code></td>
-                        <td><code>#name_id{}</code></td>
+                        <td><code>&lt;etiqueta id="id_name"&gt;</code></td>
+                        <td><code>#id_name{}</code></td>
                     </tr>
                     <tr>
                         <td>Class</td>
                         <td>Las clases se pueden utilizar en multiples elementos.</td>
-                        <td><code>&lt;etiqueta class="name_class"&gt;</code></td>
-                        <td><code>.name_class{}</code></td>
+                        <td><code>&lt;etiqueta class="class_name"&gt;</code></td>
+                        <td><code>.class_name{}</code></td>
                     </tr>
                 </table>
 
@@ -75,23 +75,27 @@
 
 <pre class="code_box">
 <span class="attribute_color">#parrafoUnico</span>{
+    <span class="style_color">width: fit-content</span>;
     <span class="style_color">background-color: darkblue</span>;
     <span class="style_color">font-size:</span> <span class="value_style_color">20px</span>;
     <span class="style_color">color: tomato</span>;
     <span class="style_color">text-align: center</span>;
 }
-<span class="attribute_color">#parrafoMultiple</span>{
+<span class="attribute_color">.parrafoMultiple</span>{
+    <span class="style_color">width: fit-content</span>;
     <span class="style_color">background-color: turquoise</span>;
     <span class="style_color">font-size:</span> <span class="value_style_color">15px</span>;
     <span class="style_color">color: purple</span>;
     <span class="style_color">text-align: center</span>;
 }
 </pre>
-    
-                <p id="parrafoUnico">¡Hola mundo único!</p>
-                <p id="parrafoMultiple">¡Hola mundo múltiple 1!</p>
-                <p id="parrafoMultiple">¡Hola mundo múltiple 2!</p>
 
+                <div id="parrafos">    
+                    <p id="parrafoUnico">¡Hola mundo único!</p>
+                    <br>
+                    <p class="parrafoMultiple">¡Hola mundo múltiple 1!</p>
+                    <p class="parrafoMultiple">¡Hola mundo múltiple 2!</p>
+                </div>
             </section>
 
             <section>
@@ -102,9 +106,11 @@
 &lt;<span class="label_color">header</span>&gt;
     <span class="comment_color">&lt;!--Menú de navegación--&gt;</span>
     &lt;<span class="label_color">nav</span>&gt;
-        &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"enlace_1"</span>&gt;Sección_1&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
-        &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"enlace_2#name_id"</span>&gt;Sección_2&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
-        &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"#name_id"</span>&gt;Sección_3&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
+        &lt;<span class="label_color">ul</span>&gt;
+            &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"enlace_1"</span>&gt;Sección_1&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
+            &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"enlace_2#id_name"</span>&gt;Sección_2&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
+            &lt;<span class="label_color">li</span>&gt;&lt;<span class="label_color">a</span> <span class="attribute_color">href</span>=<span class="value_color">"#id_name"</span>&gt;Sección_3&lt;/<span class="label_color">a</span>&gt;&lt;/<span class="label_color">li</span>&gt;
+        &lt;/<span class="label_color">ul</span>&gt;
     &lt;/<span class="label_color">nav</span>&gt;
 &lt;/<span class="label_color">header</span>&gt;
 </pre>
@@ -131,41 +137,41 @@
     &lt;/<span class="label_color">section</span>&gt;
 &lt;/<span class="label_color">main</span>&gt;
 </pre>
+                <div id="test_page">    
+                    <section id="inicio">
+                        <h2>Inicio</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eius. Nam vero, alias quod rerum, vitae tenetur saepe inventore dolorum maxime numquam! Est commodi, velit ullam eaque officia iusto provident.</p>
+                    </section>
 
-            <section id="inicio">
-                <h2>Inicio</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eius. Nam vero, alias quod rerum, vitae tenetur saepe inventore dolorum maxime numquam! Est commodi, velit ullam eaque officia iusto provident.</p>
-            </section>
+                    <section id="noticias">
+                        <h2>Noticias</h2>
+                        <article>
+                            <h3>Titulo de la noticia 1</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem sequi optio temporibus libero nesciunt! Cum veniam, magni culpa molestiae error dignissimos repellat a libero ea ullam recusandae vel dolores?</p>
+                        </article>
+                        <article>
+                            <h3>Titulo de la noticia 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </article>
+                    </section>
 
-            <section id="noticias">
-                <h2>Noticias</h2>
-                <article>
-                    <h3>Titulo de la noticia 1</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem sequi optio temporibus libero nesciunt! Cum veniam, magni culpa molestiae error dignissimos repellat a libero ea ullam recusandae vel dolores?</p>
-                </article>
-                <article>
-                    <h3>Titulo de la noticia 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </article>
-            </section>
+                    <section id="contacto">
+                        <h2>Contacto</h2>
+                        <form>
+                            <label for="">Nombre</label>
+                            <input type="text">
+                            <label for="">Correo</label>
+                            <input type="email">
+                            <input type="submit" value="Enviar" id="send">
+                        </form>
+                    </section>
+                </div>
 
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <form>
-                    <label for="">Nombre</label>
-                    <input type="text">
-                    <label for="">Correo</label>
-                    <input type="email">
-                    <input type="submit" value="Enviar" id="send">
-                </form>
-            </section>
-
-            <section>
 <pre class="code_box">
 <span class="comment_color">&lt;!--El &lt;footer&gt; representa un pie de página del sitio--&gt;</span>
 &lt;<span class="label_color">footer</span>&gt;
@@ -173,9 +179,11 @@
 &lt;/<span class="label_color">footer</span>&gt;
 </pre>
 
-                <footer>
-                    Todos los derechos reservados por la web de prueba.
-                </footer>       
+                <div id="test_page_f">
+                    <footer>
+                        Todos los derechos reservados por la web de prueba.
+                    </footer>
+                </div>
             </section>
         </section>
     </main>

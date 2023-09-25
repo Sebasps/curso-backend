@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>CSS</title>
-    <link rel="shortcut icon" href="images/icons_css3.png"/>
+    <link rel="shortcut icon" href="images/icon_css3.png"/>
     <link rel="stylesheet" href="../../styles/nav_style.css"/>
     <link rel="stylesheet" href="../../styles/code_style.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
@@ -37,6 +37,8 @@
     </header>
     <main>
         <section>
+            <h1>CSS (Cascading Style Sheets)</h1>
+            <p>Es una hoja de estilo en cascada que va aplicando formato de forma descendente a los elementos en la página web.</p>
             <section>
                 <h2>Selectores</h2>
                 <table border="solid">
@@ -49,20 +51,20 @@
                     <tr>
                         <td>Etiqueta</td>
                         <td>Hace referencia a cualquier elemento que posea la misma etiqueta.</td>
-                        <td><code>&lt;etiqueta&gt;</code></td>
-                        <td><code>etiqueta{}</code></td>
+                        <td><code>&lt;tag&gt;</code></td>
+                        <td><code>tag{}</code></td>
                     </tr>
                     <tr>
                         <td>ID</td>
                         <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
-                        <td><code>&lt;etiqueta id="name_id"&gt;</code></td>
-                        <td><code>#name_id{}</code></td>
+                        <td><code>&lt;tag id="id_name"&gt;</code></td>
+                        <td><code>#id_name{}</code></td>
                     </tr>
                     <tr>
                         <td>Class</td>
                         <td>Las clases se pueden utilizar en multiples elementos.</td>
-                        <td><code>&lt;etiqueta class="name_class"&gt;</code></td>
-                        <td><code>.name_class{}</code></td>
+                        <td><code>&lt;tag class="class_name"&gt;</code></td>
+                        <td><code>.class_name{}</code></td>
                     </tr>
                 </table>
 
@@ -71,20 +73,10 @@
                     <tr>
                         <th>Propiedad</th>
                         <th>Descripción</th>
-                        <th>Utilización</th>
                     </tr>
                     <tr>
                         <td>font-family</td>
                         <td>Cambia el tipo de letra del texto.</td>
-                        <td rowspan="3">
-                            <code>
-                                selector{<br>
-                                    font-family: name;<br>
-                                    font-size: size (px);<br>
-                                    color: (#hex || name);<br>
-                                }
-                            </code>
-                        </td>
                     </tr>
                     <tr>
                         <td>font-size</td>
@@ -101,22 +93,10 @@
                     <tr>
                         <th>Propiedad</th>
                         <th>Descripción</th>
-                        <th>Utilización</th>
                     </tr>
                     <tr>
                         <td>background-color</td>
                         <td>Color de fondo.</td>
-                        <td rowspan="5">
-                            <code>
-                                selector{<br>
-                                    background-color: (#hex || name);<br>
-                                    background-image: url(“...”);<br>
-                                    background-position: position;<br>
-                                    background-size: size;<br>
-                                    background-repeat: ;<br>
-                                }
-                            </code>
-                        </td>
                     </tr>
                     <tr>
                         <td>background-image</td>
@@ -141,23 +121,10 @@
                     <tr>
                         <th>Propiedad</th>
                         <th>Descripción</th>
-                        <th>Utilización</th>
                     </tr>
                     <tr>
                         <td>text-align</td>
                         <td>Alineación del texto.</td>
-                        <td rowspan="6">
-                            <code>
-                                selector{<br>
-                                    text-align: align;<br>
-                                    text-decoration: decoration;<br>
-                                    text-transform: transform;<br>
-                                    text-indent: indent (px);<br>   
-                                    letter-spacing: spacing (px);<br>
-                                    line-height: height;}<br>
-                                }
-                            </code>
-                        </td>
                     </tr>
                     <tr>
                         <td>text-decoration</td>
@@ -183,11 +150,97 @@
 
                 <h2>Modelo de caja</h2>
                 <figure id="box_model">
-                    <img src="" alt="Modelo caja">
-                    <figcaption>.</figcaption>
+                    <img src="images/box_model.png" alt="Modelo caja">
+                    <figcaption></figcaption>
                 </figure>
 
+                <h3>Content</h3>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>Modifica el ancho.</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>Modifica el alto.</td>
+                    </tr>
+                    <tr>
+                        <td>max-width<br>min-width</td>
+                        <td>Define el máximo o el mínimo ancho.</td>
+                    </tr>
+                    <tr>
+                        <td>max-height<br>min-height</td>
+                        <td>Define el máximo o el mínimo alto.</td>
+                    </tr>
+                </table>
 
+                <h3>Border</h3>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>border-color</td>
+                        <td>Modifica el color del borde.</td>
+                    </tr>
+                    <tr>
+                        <td>border-style</td>
+                        <td>Modifica el estilo del borde.</td>
+                    </tr>
+                    <tr>
+                        <td>border-width</td>
+                        <td>Modifica el ancho del borde.</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>Agrupa las propiedades de border.</td>
+                    </tr>
+                </table>
+
+                <h3>Padding</h3>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>padding-left<br>padding-right</td>
+                        <td>Establece relleno a un elemento en derecha o izquierda.</td>
+                    </tr>
+                    <tr>
+                        <td>padding-top<br>padding-bottom</td>
+                        <td>Establece relleno a un elemento arriba o abajo.</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>Establece relleno a un elemento.</td>
+                    </tr>
+                </table>
+
+                <h3>Margin</h3>
+                <table border="solid">
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>margin-left<br>margin-right</td>
+                        <td>Establece un margen a un elemento en derecha o izquierda.</td>
+                    </tr>
+                    <tr>
+                        <td>margin-top<br>margin-bottom</td>
+                        <td>Establece un margen a un elemento arriba o abajo.</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Establece un margen a un elemento.</td>
+                    </tr>
+                </table>
             </section>
         </section>
     </main>
