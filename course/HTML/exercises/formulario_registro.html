@@ -36,18 +36,18 @@
     </header>
     <main>
         <section>
-            <h2>Inicio de sesión</h2>
-                <form>
-                    <label for="">Usuario</label>
-                    <input type="text">
-                    <label for="">Contraseña</label>
-                    <input type="password">
-                    <input type="submit" value="Iniciar sesión"><br>
-                </form>
-            <h2>Formulario de registro</h1>
-
+            <h2>Formulario de inicio de sesión</h2>
             <form>
-                <table>
+                <label for="">Usuario</label>
+                <input type="text">
+                <label for="">Contraseña</label>
+                <input type="password">
+                <input type="submit" value="Iniciar sesión"><br>
+            </form>
+
+            <h2>Formulario de registro</h2>
+            <form>
+                <table align="center">
                     <tr>
                         <td><label for="">Nombre</label></td>
                         <td><label for="">Apellido</label></td>
@@ -94,13 +94,80 @@
                         <td><input type="password" required><br></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" required>Acepto terminos <br> y condiciones.</td>
+                        <td><input type="checkbox" required>Acepto terminos<br>y condiciones.</td>
                         <td><input type="submit" value="Registrarse"></td>
                     </tr>
                 </table>
+            </form>
 
             <h2>Posible solución</h2>
-            
+
+<pre class="code_box">
+&lt;<span class="tag_color">h2</span>&gt;Formulario de inicio de sesión&lt;/<span class="tag_color">h2</span>&gt;
+&lt;<span class="tag_color">form</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Usuario&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"submit"</span> <span class="attribute_color">value</span>=<span class="value_color">"Iniciar sesión"</span>&gt;&lt;<span class="tag_color">br</span>&gt;
+&lt;/<span class="tag_color">form</span>&gt;
+
+&lt;<span class="tag_color">h2</span>&gt;Formulario de registro&lt;/<span class="tag_color">h2</span>&gt;
+&lt;<span class="tag_color">form</span>&gt;
+    &lt;<span class="tag_color">table</span> <span class="attribute_color">align</span>=<span class="value_color">"center"</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Nombre&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Apellido&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Tipo de documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;
+                &lt;<span class="tag_color">select</span> <span class="attribute_color">required</span>&gt;
+                    &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">""</span>&gt;&lt;/<span class="tag_color">option</span>&gt;
+                    &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"RC"</span>&gt;Registro civil&lt;/<span class="tag_color">option</span>&gt;
+                    &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"TI"</span>&gt;Tarjeta de identidad&lt;/<span class="tag_color">option</span>&gt;
+                    &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"CC"</span>&gt;Cedula de ciudadania&lt;/<span class="tag_color">option</span>&gt;
+                &lt;/<span class="tag_color">select</span>&gt;
+            &lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"number"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Fecha de nacimiento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"date"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Repetir correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Repetir contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+        &lt;<span class="tag_color">tr</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"checkbox"</span> <span class="attribute_color">required</span>&gt;Acepto terminos&lt;<span class="tag_color">br</span>&gt;y condiciones.&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"submit"</span> <span class="attribute_color">value</span>=<span class="value_color">"Registrarse"</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+        &lt;/<span class="tag_color">tr</span>&gt;
+    &lt;/<span class="tag_color">table</span>&gt;
+&lt;/<span class="tag_color">form</span>&gt;
+</pre>
+
         </section>
     </main>
 </body>
