@@ -1,0 +1,17 @@
+.code_box_content{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.operators_table{
+	margin: 15px auto;
+	border: solid;
+	text-align: center;
+}
+.operators_table th{
+	border-bottom: solid;
+}
+.operators_table td{
+	margin: 0;
+	padding: 5px 10px;
+}
