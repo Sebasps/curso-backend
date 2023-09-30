@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Estructura de control</title>
-    <link rel="shortcut icon" href="images/icon-js.png"/>
+    <link rel="shortcut icon" href="images/icon_js.png"/>
     <link rel="stylesheet" href="../../styles/nav_style.css"/>
     <link rel="stylesheet" href="../../styles/code_style.css"/>
 </head>
@@ -19,10 +19,10 @@
                     <ul>
                         <li><a href="#">HTML</a>
                             <ul>
-                                <li><a href="../HTML/1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
-                                <li><a href="../HTML/2. listas-tablas.html">Listas y tablas</a></li>
-                                <li><a href="../HTML/3. enlaces-formularios.html">Enlaces y formularios</a></li>
-                                <li><a href="../HTML/4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><a href="../HTML/texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="../HTML/listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="../HTML/enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="../HTML/semantica-selectores.html">Semantica y selectores</a></li>
                                 <li><hr></li>
                                 <li><a href="../HTML/exercises/lista.html">Ejercicios</a></li>
                             </ul>
@@ -33,6 +33,8 @@
                                 <li><a href="sintaxis_basica.html">Sintaxis Básica</a></li>
                                 <li><a href="#">Estructuras de control</a></li>
                                 <li><a href="funciones.html">Funciones</a></li>
+                                <li><a href="arreglos-objetos.html">Arreglos y objetos</a></li>
+                                <li><a href="poo.html">POO</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -40,20 +42,97 @@
             </ul>
         </nav>
     </header>
-    <main>        
+    <main>
+        <section>
         <h1>Estructuras de control</h1>
-        <h2>Estructuras condicionales</h2>
-        <ol>
-            <li>If - Else (Si - Entonces)</li>
-            <li>Operador ternario</li>
-            <li>Switch (Segun - Hacer)</li>
-        </ol>
-        <h2>Estructuras de control iterativas (ciclos)</h2>
-        <ol>
-            <li>While (Mientras)</li>
-            <li>For (Para)</li>
-        </ol>
+
+            <section>
+                <h2>Estructuras condicionales</h2>
+                <p>Instrucciones que permiten dirigir la ejecución del algoritmo hacia uno u otro proceso.</p>
+                <h3>if - else</h3>
+                <p>Estructura de control que permite que se realice una instrucción u otra de acuerdo a la evaluación de una condición.</p>
+
+                <div class="boxes_content">
+                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">if</span> (condition_1){
+    statement_1
+}
+<span class="tag_color">else if</span> (condition_2){
+    statement_2
+}
+<span class="comment_color">//...</span>
+<span class="tag_color">else</span>{
+    statement_n
+}
+</pre>
+                </div>
+
+                <h3>Operador ternario</h3>
+                <p>Estructura de control para condiciones simples.</p>
+
+               <div class="boxes_content">
+                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+condition <span class="tag_color">?</span> expressionIfTrue <span class="tag_color">:</span> expressionIfFalse
+</pre>
+                </div>
+ 
+                <h3>Switch</h3>
+                <p>Estructura de control que permite evaluar diferentes opciones de acuerdo a una entrada.</p>
+
+               <div class="boxes_content">
+                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">switch</span> (expression){
+    <span class="tag_color">case</span> value_1:
+        statements
+        <span class="tag_color">break</span>
+    <span class="tag_color">case</span> value_2:
+        statements
+        <span class="tag_color">break</span>
+    <span class="comment_color">//...</span>
+    <span class="tag_color">case</span> value_n:
+        statements
+        <span class="tag_color">break</span>
+    <span class="tag_color">default</span>:
+        statements
+        <span class="tag_color">break</span>
+} 
+</pre>
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Estructuras de control iterativas</h2>
+                <p>Bloque de instrucciones repetitivo hasta que se cumple una condición.</p>
+                <h3>While</h3>
+                <p>Estructura de control para ejecutar una secuencia de instrucciones mientras una condición sea verdadera.</p>
+
+               <div class="boxes_content">
+                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">while</span> (condition){
+    statement
+}
+</pre>
+                </div>
+
+                <h3>For</h3>
+                <p>Estructura de control para ejecutar una secuencia de instrucciones un número determinado de veces.</p>
+
+               <div class="boxes_content">
+                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">for</span> (initialization; condition; afterthought){
+    statement
+}
+</pre>
+                </div>
+
+            </section>
+        </section>
     </main>
-    <script src="app.js"></script>
 </body>
 </html>

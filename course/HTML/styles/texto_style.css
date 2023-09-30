@@ -21,6 +21,7 @@ figure{
     place-items: center;
 }
 #multimedia_tag figure{
+    margin: 0px;
     width: 140px;
     border: 1px solid #ccc;
     padding: 5px;

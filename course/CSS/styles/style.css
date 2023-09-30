@@ -2,9 +2,6 @@ table{
 	margin: auto;
 }
 
-img{
-	width: 100%;
-}
 .code_box_content{
 	display: grid;
 	grid-template-columns: 50% 50%;

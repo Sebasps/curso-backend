@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Sintaxis básica</title>
-    <link rel="shortcut icon" href="images/icon-js.png"/>
+    <link rel="shortcut icon" href="images/icon_js.png"/>
     <link rel="stylesheet" href="../../styles/nav_style.css"/>
     <link rel="stylesheet" href="../../styles/code_style.css"/>
     <link rel="stylesheet" href="styles/sintaxis_style.css"/>
@@ -20,10 +20,10 @@
                     <ul>
                         <li><a href="#">HTML</a>
                             <ul>
-                                <li><a href="../HTML/1. etiquetas-texto-multimedia.html">Texto y multimedia</a></li>
-                                <li><a href="../HTML/2. listas-tablas.html">Listas y tablas</a></li>
-                                <li><a href="../HTML/3. enlaces-formularios.html">Enlaces y formularios</a></li>
-                                <li><a href="../HTML/4. semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><a href="../HTML/texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="../HTML/listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="../HTML/enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="../HTML/semantica-selectores.html">Semantica y selectores</a></li>
                                 <li><hr></li>
                                 <li><a href="../HTML/exercises/lista.html">Ejercicios</a></li>
                             </ul>
@@ -34,6 +34,8 @@
                                 <li><a href="#">Sintaxis Básica</a></li>
                                 <li><a href="estructuras_control.html">Estructuras de control</a></li>
                                 <li><a href="funciones.html">Funciones</a></li>
+                                <li><a href="arreglos-objetos.html">Arreglos y objetos</a></li>
+                                <li><a href="poo.html">POO</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -50,18 +52,24 @@
                 <h3>Variables globales</h3>
                 <p>Datos que pueden cambiar en cualquier lugar.</p>
 
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
-<span class="comment_color">&lt;!--Declaración e inicialización de variable global--&gt;</span>
+<span class="comment_color">//Declaración e inicialización de variable global</span>
 <span class="tag_color">var</span> variable_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"</span>
 </pre>
+                </div>
 
             <h3>Variables locales</h3>
             <p>Datos que solo pueden cambiar en un bloque.</p>
 
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
-<span class="comment_color">&lt;!--Declaración e inicialización de variable local--&gt;</span>
+<span class="comment_color">//Declaración e inicialización de variable local</span>
 <span class="tag_color">let</span> variable_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"
 </pre>
+                </div>
 
             </section>
 
@@ -69,10 +77,13 @@
             <h2>Constantes</h2>    
             <p>Datos que no pueden cambiar.</p>
 
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
-<span class="comment_color">&lt;!--Declaración e inicialización de constante--&gt;</span>
+<span class="comment_color">//Declaración e inicialización de constante</span>
 <span class="tag_color">const</span> constant_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"</span>
 </pre>
+                </div>
 
             </section>
 
@@ -102,7 +113,8 @@
                     </tr>
                 </table>
 
-                <div class="code_box_content">
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Una variable nula no tiene asignado ningun valor</span>
 <span class="tag_color">let</span> variableNula <span class="tag_color">=</span> <span class="value_style_color">null</span>
@@ -119,6 +131,7 @@
 <span class="style_color">console</span>.<span class="style_color">log</span>(variableGlobal)
 <span class="style_color">console</span>.<span class="style_color">log</span>(PI)
 </pre>
+                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
 Segundo valor
 Primer valor
@@ -153,7 +166,8 @@ Primer valor
                     </tr>
                 </table>
 
-                <div class="code_box_content">
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">let</span> numero1 <span class="tag_color">=</span> <span class="value_style_color">5</span>, numero2 <span class="tag_color">=</span> <span class="value_style_color">2</span>, resultado
 resultado<span class="tag_color"> = </span>(numero2<span class="tag_color">+</span>numero1<span class="tag_color">*</span>numero2)<span class="tag_color">/</span>(numero1<span class="tag_color">-</span>numero2)
@@ -166,12 +180,14 @@ resultado<span class="tag_color">--</span>
 resultado<span class="tag_color">--</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
+                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
 Resultado de (numero2+numero1*numero2)/(numero1-numero2): <span class="number_console_color">4</span>
 <span class="number_console_color">5</span>
 <span class="number_console_color">3</span>
 </pre>
                 </div>
+
 
                 <table class="operators_table">
                     <tr>
@@ -189,7 +205,8 @@ Resultado de (numero2+numero1*numero2)/(numero1-numero2): <span class="number_co
                     </tr>
                 </table>
 
-                <div class="code_box_content">
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">let</span> numero3 <span class="tag_color">=</span> <span class="value_color">"5"</span>
 resultado <span class="tag_color">=</span> numero1 <span class="tag_color">&gt;</span> numero2
@@ -203,6 +220,7 @@ resultado <span class="tag_color">=</span> numero1 <span class="tag_color">==</s
 resultado <span class="tag_color">=</span> numero1 <span class="tag_color">===</span> numero3
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
+                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
 <span class="number_console_color">true</span>
 <span class="number_console_color">false</span>
@@ -222,7 +240,8 @@ resultado <span class="tag_color">=</span> numero1 <span class="tag_color">===</
                     </tr>
                 </table>
 
-                <div class="code_box_content">
+                <div class="boxes_content">
+                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//El operador && devolverá verdadero unicamente si todos los elementos son verdaderos</span>
 resultado <span class="tag_color">=</span> <span class="value_style_color">true</span> <span class="tag_color">&&</span> <span class="value_style_color">false</span>
@@ -234,6 +253,7 @@ resultado <span class="tag_color">=</span> <span class="value_style_color">true<
 resultado <span class="tag_color">=!</span> <span class="value_style_color">true</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
+                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
 <span class="number_console_color">false</span>
 <span class="number_console_color">true</span>
@@ -244,7 +264,5 @@ resultado <span class="tag_color">=!</span> <span class="value_style_color">true
             </section>
         </section>
     </main>
-    <!-- Con la etiqueta script puedo unir el HTML con el JS -->
-    <script src="scripts/sintaxis_basica.js"></script>
 </body>
 </html>

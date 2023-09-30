@@ -1,4 +1,15 @@
+.boxes_content{
+    margin: 15px 0px;
+}
+.build{
+    height: 20px;
+    margin: 0px;
+    background: grey;
+    text-align: right;
+    color: white;
+}
 .code_box{
+    margin: 0px;
     border: 1px solid black;
     padding: 15px;
     overflow: auto;
@@ -22,6 +33,9 @@
 }
 .value_style_color{
     color: mediumpurple;
+}
+.parameter_color{
+    color: orange;
 }
 .number_console_color{
     color: #68a95e;
