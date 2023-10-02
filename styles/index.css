@@ -1,0 +1,12 @@
+#construction{
+	border: solid;
+	text-align: center;
+}
+#tittle{
+	padding: 15px;
+	background: black;
+	color: white;
+}
+.invert{
+	transform: scaleX(-1);
+}
