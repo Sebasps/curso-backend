@@ -45,9 +45,70 @@
     <main>
         <section>
             <h1>Estructuras de datos compuestas</h1>
-            <h2>Arreglos []</h2>
+            <h2>Arreglos</h2>
             <p>Como una colección de elementos la cual puede ser accedida por medio de un id</p>
-            <h2>Objetos {}</h2>
+
+            <div class="boxes_content">
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Definición y creación de arreglo</span>
+<span class="tag_color">const</span> array_name <span class="tag_color">=</span> [<span class="value_color">"element_1"</span>, <span class="value_color">"element_2"</span>, ...,  <span class="value_color">"element_n"</span>]
+<span class="comment_color">//Para acceder a un elemento especifico se debe proporcionar su posición</span>
+<span class="comment_color">//La posición del primer elemento de un arreglo es 0</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(array_name[<span class="value_style_color">0</span>])
+
+<span class="comment_color">//Los arreglos pueden contener diferentes tipos de datos incluyendo arreglos</span>
+<span class="tag_color">const</span> variosDatos <span class="tag_color">=</span> [<span class="value_color">"A"</span>, <span class="value_style_color">1</span>, [<span class="value_color">"cadena texto"</span>, <span class="value_style_color">true</span>]]
+<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[<span class="value_style_color">2</span>][<span class="value_style_color">1</span>])
+
+<span class="comment_color">//La estructura de control for sirve para recorrer un arreglo</span>
+<span class="comment_color">//Propiedad: Length permite saber cual es el tamaño de un arreglo</span>
+<span class="tag_color">for</span>(<span class="tag_color">let</span> i<span class="tag_color">=</span><span class="value_style_color">0</span>; i<span class="tag_color">&lt;</span>variosDatos.length; i<span class="tag_color">++</span>){
+    <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[i])
+}
+</pre>
+                <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+element_1
+<span class="number_console_color">true</span>
+A
+<span class="number_console_color">1</span>
+<span class="comment_color">▼</span> <span class="array_console_color">Array [ </span><span class="string_console_color">"cadena texto"</span>, <span class="number_console_color">true</span> <span class="array_console_color">]</span>
+    <span class="array_console_color">0</span><span class="comment_color">:</span> <span class="string_console_color">"cadena texto"</span>
+    <span class="array_console_color">1</span><span class="comment_color">:</span> <span class="number_console_color">true</span>
+    <span class="array_console_color">length</span><span class="comment_color">:</span> <span class="number_console_color">2</span>
+</pre>
+            </div>
+
+            <div class="boxes_content">
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Metodos para manipulación de arreglos</span>
+<span class="comment_color">//Push sirve para agregar un nuevo elemento a un arreglo</span>
+datosVarios.<span class="style_color">push</span>(<span class="value_style_color">false</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
+<span class="comment_color">//Pop es el metodo que nos sirve para quitar el ultimo elemento de un arreglo</span>
+datosVarios.<span class="style_color">pop</span>()
+<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
+
+<span class="comment_color">//Splice permite eliminar elementos desde una posición y/o añadir nuevos</span>
+datosVarios.<span class="style_color">splice</span>(<span class="value_style_color">1</span>, <span class="value_style_color">2</span>, <span class="value_color">"cadena"</span>, <span class="value_style_color">true</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
+
+<span class="comment_color">//LLena las posiciones deseadas de un arreglo con un elemento determinado</span>
+<span class="tag_color">const</span> llenado <span class="tag_color">=</span> <span class="style_color">Array</span>(<span class="value_style_color">5</span>).<span class="style_color">fill</span>(<span class="value_style_color">true</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(llenado)
+</pre>
+                <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(4)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="number_console_color">1</span>, <span class="comment_color">(2)</span> <span class="array_console_color">[</span><span class="comment_color">...</span><span class="array_console_color">]</span>, <span class="number_console_color">false</span> <span class="array_console_color">]</span>
+<span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(3)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="number_console_color">1</span>, <span class="comment_color">(2)</span> <span class="array_console_color">[</span><span class="comment_color">...</span><span class="array_console_color">] ]</span>
+<span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(3)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="string_console_color">"cadena"</span>, <span class="number_console_color">true</span>, <span class="array_console_color">]</span>
+<span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(5)</span> <span class="array_console_color">[</span> <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span> <span class="array_console_color">]</span>
+</pre>
+            </div>
+
+            <h2>Objetos</h2>
             <p>Los objetos son estructuras de datos compuestos que tienen propiedades (atributos o caracteristicas propias del objeto) y tienen metodos (comportamiento o acciones propias del objeto)</p>
         </section>
     </main>

@@ -40,3 +40,9 @@
 .number_console_color{
     color: #68a95e;
 }
+.array_console_color{
+    color: cornflowerblue;
+}
+.string_console_color{
+    color: violet;
+}
