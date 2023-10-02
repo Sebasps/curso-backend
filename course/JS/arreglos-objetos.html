@@ -49,6 +49,7 @@
             <p>Como una colección de elementos la cual puede ser accedida por medio de un id</p>
 
             <div class="boxes_content">
+
                 <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Definición y creación de arreglo</span>
@@ -56,33 +57,26 @@
 <span class="comment_color">//Para acceder a un elemento especifico se debe proporcionar su posición</span>
 <span class="comment_color">//La posición del primer elemento de un arreglo es 0</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(array_name[<span class="value_style_color">0</span>])
-
-<span class="comment_color">//Los arreglos pueden contener diferentes tipos de datos incluyendo arreglos</span>
-<span class="tag_color">const</span> variosDatos <span class="tag_color">=</span> [<span class="value_color">"A"</span>, <span class="value_style_color">1</span>, [<span class="value_color">"cadena texto"</span>, <span class="value_style_color">true</span>]]
-<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[<span class="value_style_color">2</span>][<span class="value_style_color">1</span>])
-
-<span class="comment_color">//La estructura de control for sirve para recorrer un arreglo</span>
-<span class="comment_color">//Propiedad: Length permite saber cual es el tamaño de un arreglo</span>
-<span class="tag_color">for</span>(<span class="tag_color">let</span> i<span class="tag_color">=</span><span class="value_style_color">0</span>; i<span class="tag_color">&lt;</span>variosDatos.length; i<span class="tag_color">++</span>){
-    <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[i])
-}
 </pre>
                 <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
 element_1
-<span class="number_console_color">true</span>
-A
-<span class="number_console_color">1</span>
-<span class="comment_color">▼</span> <span class="array_console_color">Array [ </span><span class="string_console_color">"cadena texto"</span>, <span class="number_console_color">true</span> <span class="array_console_color">]</span>
-    <span class="array_console_color">0</span><span class="comment_color">:</span> <span class="string_console_color">"cadena texto"</span>
-    <span class="array_console_color">1</span><span class="comment_color">:</span> <span class="number_console_color">true</span>
-    <span class="array_console_color">length</span><span class="comment_color">:</span> <span class="number_console_color">2</span>
 </pre>
             </div>
 
             <div class="boxes_content">
                 <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
+<span class="comment_color">//Los arreglos pueden contener diferentes tipos de datos incluyendo arreglos</span>
+<span class="tag_color">const</span> variosDatos <span class="tag_color">=</span> [<span class="value_color">"A"</span>, <span class="value_style_color">1</span>, [<span class="value_color">"cadena texto"</span>, <span class="value_style_color">true</span>]]
+<span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[<span class="value_style_color">2</span>][<span class="value_style_color">1</span>])
+
+<span class="comment_color">//La estructura de control for sirve para recorrer un arreglo</span>
+<span class="comment_color">//Propiedad: Length permite saber cual es el tamaño de un arreglo</span>
+<span class="tag_color">for</span> (<span class="tag_color">let</span> i<span class="tag_color">=</span><span class="value_style_color">0</span>; i<span class="tag_color">&lt;</span>variosDatos.length; i<span class="tag_color">++</span>){
+    <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos[i])
+}
+
 <span class="comment_color">//Metodos para manipulación de arreglos</span>
 <span class="comment_color">//Push sirve para agregar un nuevo elemento a un arreglo</span>
 datosVarios.<span class="style_color">push</span>(<span class="value_style_color">false</span>)
@@ -90,7 +84,6 @@ datosVarios.<span class="style_color">push</span>(<span class="value_style_color
 <span class="comment_color">//Pop es el metodo que nos sirve para quitar el ultimo elemento de un arreglo</span>
 datosVarios.<span class="style_color">pop</span>()
 <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
-
 <span class="comment_color">//Splice permite eliminar elementos desde una posición y/o añadir nuevos</span>
 datosVarios.<span class="style_color">splice</span>(<span class="value_style_color">1</span>, <span class="value_style_color">2</span>, <span class="value_color">"cadena"</span>, <span class="value_style_color">true</span>)
 <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
@@ -101,15 +94,101 @@ datosVarios.<span class="style_color">splice</span>(<span class="value_style_col
 </pre>
                 <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
 <pre class="code_box">
+<span class="number_console_color">true</span>
+
+A
+<span class="number_console_color">1</span>
+<span class="comment_color">▼</span> <span class="array_console_color">Array [ </span><span class="string_console_color">"cadena texto"</span>, <span class="number_console_color">true</span> <span class="array_console_color">]</span>
+    <span class="array_console_color">0</span><span class="comment_color">:</span> <span class="string_console_color">"cadena texto"</span>
+    <span class="array_console_color">1</span><span class="comment_color">:</span> <span class="number_console_color">true</span>
+    <span class="array_console_color">length</span><span class="comment_color">:</span> <span class="number_console_color">2</span>
+
 <span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(4)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="number_console_color">1</span>, <span class="comment_color">(2)</span> <span class="array_console_color">[</span><span class="comment_color">...</span><span class="array_console_color">]</span>, <span class="number_console_color">false</span> <span class="array_console_color">]</span>
 <span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(3)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="number_console_color">1</span>, <span class="comment_color">(2)</span> <span class="array_console_color">[</span><span class="comment_color">...</span><span class="array_console_color">] ]</span>
 <span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(3)</span> <span class="array_console_color">[</span> <span class="string_console_color">"A"</span>, <span class="string_console_color">"cadena"</span>, <span class="number_console_color">true</span>, <span class="array_console_color">]</span>
+
 <span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(5)</span> <span class="array_console_color">[</span> <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span>, <span class="number_console_color">true</span> <span class="array_console_color">]</span>
 </pre>
             </div>
 
             <h2>Objetos</h2>
             <p>Los objetos son estructuras de datos compuestos que tienen propiedades (atributos o caracteristicas propias del objeto) y tienen metodos (comportamiento o acciones propias del objeto)</p>
+
+            <div class="boxes_content">
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Definición y creación de objeto</span>
+<span class="tag_color">const</span> object_name <span class="tag_color"> = </span>{
+    <span class="comment_color">//Los identificadores de las propiedades pueden ser nombres, números o strings</span>
+    attribute_1: value_1,
+    <span class="value_style_color">2</span>: value2,
+    <span class="value_color">"attribute n"</span>: value3,
+    <span class="comment_color">//Los metodos son comportamiento o acciones propias del objeto</span>
+    <span class="attribute_color">method_name_1</span>: <span class="tag_color">function</span>(){
+        <span class="tag_color">return</span> output
+    },
+    <span class="attribute_color">method_name_2</span>: <span class="tag_color">function</span>(){
+        <span class="tag_color">return</span> output
+    }
+}
+<span class="comment_color">//Acceder a los atributos de un objeto</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(object_name.attribute_1)
+<span class="comment_color">//Acceder a los metodos de un objeto</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(object_name.<span class="style_color">method_name_1</span>())
+</pre>
+                <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+value_1
+output
+</pre>
+            </div>
+
+            <div class="boxes_content">
+<div class="boxes_content">
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">const</span> carro <span class="tag_color">=</span> {
+    marca: <span class="value_color">"Suzuki"</span>,
+    color: <span class="value_color">"Negro"</span>,
+    tamanio: <span class="value_color">"Grande"</span>,
+    anio: <span class="value_style_color">2021</span>,
+    duenios: [<span class="value_color">"Camilo"</span>, <span class="value_color">"Maria"</span>, <span class="value_color">"Juan"</span>, <span class="value_color">"Ana"</span>], 
+
+    <span class="attribute_color">acelerar</span>: <span class="tag_color">function</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Acelerando..."</span>
+    },
+    <span class="attribute_color">frenar</span>: <span class="tag_color">function</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Frenando..."</span>
+    }
+}
+
+<span class="style_color">console</span>.<span class="style_color">log</span>(carro.duenios)
+carro.duenio.<span class="style_color">pop</span>()
+<span class="comment_color">//Acceder a las propiedades que se encuentran dentro del arreglo que esta dentro del objeto</span>
+carro.duenios <span class="style_color">forEach</span>(<span class="parameter_color">duenio</span> <span class="tag_color">=&gt;</span> {
+    <span class="style_color">console</span>.<span class="style_color">log</span>(duenio)
+})
+
+<span class="comment_color">//Modificar las propiedades de un objeto</span>
+carro.duenios[<span class="value_style_color">1</span>] <span class="tag_color">=</span> {
+    nombre: <span class="value_color">"Laura"</span>,
+    apellido: <span class="value_color">"Hernandez"</span>,
+    edad: <span class="value_style_color">28</span>
+}
+<span class="style_color">console</span>.<span class="style_color">log</span>(carro.duenios[<span class="value_style_color">1</span>])
+</pre>
+                <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">►</span> <span class="array_console_color">Array</span><span class="comment_color">(4)</span> <span class="array_console_color">[</span> <span class="string_console_color">"Camilo"</span>, <span class="string_console_color">"Maria"</span>, <span class="string_console_color">"Juan"</span>, <span class="string_console_color">"Ana"</span> <span class="array_console_color">]</span>
+
+Camilo
+Maria
+Juan
+
+<span class="comment_color">►</span> <span class="array_console_color">Object</span> <span class="array_console_color">{ nombre</span> <span class="comment_color">:</span> <span class="string_console_color">"Laura"</span>, <span class="array_console_color">apellido</span><span class="comment_color">:</span> <span class="string_console_color">"Hernandez"</span>, <span class="array_console_color">edad</span><span class="comment_color">:</span> <span class="number_console_color">28</span> <span class="array_console_color">}</span>
+</pre>
+            </div>
+
         </section>
     </main>
 </body>
