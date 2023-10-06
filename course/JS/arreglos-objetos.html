@@ -35,6 +35,12 @@
                                 <li><a href="funciones.html">Funciones</a></li>
                                 <li><a href="#">Arreglos y objetos</a></li>
                                 <li><a href="poo.html">POO</a></li>
+                                <li><a href="json.html">JSON</a></li>
+                                <li><a href="api_fetch.html">API FETCH</a></li>
+                                <li><a href="dom.html">DOM</a></li>
+                                <li><a href="localStorage.html">LocalStorage</a></li>
+                                <li><hr></li>
+                                <li><a href="exercises/lista.html">Ejercicios</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -46,14 +52,13 @@
         <section>
             <h1>Estructuras de datos compuestas</h1>
             <h2>Arreglos</h2>
-            <p>Como una colección de elementos la cual puede ser accedida por medio de un id</p>
+            <p>Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación.</p>
 
             <div class="boxes_content">
-
                 <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Definición y creación de arreglo</span>
-<span class="tag_color">const</span> array_name <span class="tag_color">=</span> [<span class="value_color">"element_1"</span>, <span class="value_color">"element_2"</span>, ...,  <span class="value_color">"element_n"</span>]
+<span class="tag_color">const</span> array_name <span class="tag_color">=</span> [<span class="value_color">"element_1"</span>, <span class="value_color">"element_2"</span>, ..., <span class="value_color">"element_n"</span>]
 <span class="comment_color">//Para acceder a un elemento especifico se debe proporcionar su posición</span>
 <span class="comment_color">//La posición del primer elemento de un arreglo es 0</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(array_name[<span class="value_style_color">0</span>])
@@ -78,10 +83,10 @@ element_1
 }
 
 <span class="comment_color">//Metodos para manipulación de arreglos</span>
-<span class="comment_color">//Push sirve para agregar un nuevo elemento a un arreglo</span>
+<span class="comment_color">//Push agrega elementos al final de un arreglo</span>
 datosVarios.<span class="style_color">push</span>(<span class="value_style_color">false</span>)
 <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
-<span class="comment_color">//Pop es el metodo que nos sirve para quitar el ultimo elemento de un arreglo</span>
+<span class="comment_color">//Pop extrae el ultimo elemento de un arreglo</span>
 datosVarios.<span class="style_color">pop</span>()
 <span class="style_color">console</span>.<span class="style_color">log</span>(variosDatos)
 <span class="comment_color">//Splice permite eliminar elementos desde una posición y/o añadir nuevos</span>
@@ -112,18 +117,19 @@ A
             </div>
 
             <h2>Objetos</h2>
-            <p>Los objetos son estructuras de datos compuestos que tienen propiedades (atributos o caracteristicas propias del objeto) y tienen metodos (comportamiento o acciones propias del objeto)</p>
+            <p>Los objetos son estructuras de datos compuestos que tienen propiedades (atributos o caracteristicas propias del objeto) y tienen metodos (comportamiento o acciones propias del objeto).</p>
 
             <div class="boxes_content">
                 <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Definición y creación de objeto</span>
 <span class="tag_color">const</span> object_name <span class="tag_color"> = </span>{
-    <span class="comment_color">//Los identificadores de las propiedades pueden ser nombres, números o strings</span>
+    <span class="comment_color">//Definición de atributos</span>
+    <span class="comment_color">//Los identificadores de los atributos pueden ser nombres, números o strings</span>
     attribute_1: value_1,
     <span class="value_style_color">2</span>: value2,
     <span class="value_color">"attribute n"</span>: value3,
-    <span class="comment_color">//Los metodos son comportamiento o acciones propias del objeto</span>
+    <span class="comment_color">//Definición de metodos</span>
     <span class="attribute_color">method_name_1</span>: <span class="tag_color">function</span>(){
         <span class="tag_color">return</span> output
     },
@@ -164,12 +170,13 @@ output
 
 <span class="style_color">console</span>.<span class="style_color">log</span>(carro.duenios)
 carro.duenio.<span class="style_color">pop</span>()
-<span class="comment_color">//Acceder a las propiedades que se encuentran dentro del arreglo que esta dentro del objeto</span>
+<span class="comment_color">//Acceder a los atributos contenidos en un arreglo dentro de un objeto</span>
+<span class="comment_color">//Foreach permite ejecutar un mismo conjunto de instrucciones a cada elemento contenido</span>
 carro.duenios <span class="style_color">forEach</span>(<span class="parameter_color">duenio</span> <span class="tag_color">=&gt;</span> {
     <span class="style_color">console</span>.<span class="style_color">log</span>(duenio)
 })
 
-<span class="comment_color">//Modificar las propiedades de un objeto</span>
+<span class="comment_color">//Modificar los atributos de un objeto</span>
 carro.duenios[<span class="value_style_color">1</span>] <span class="tag_color">=</span> {
     nombre: <span class="value_color">"Laura"</span>,
     apellido: <span class="value_color">"Hernandez"</span>,
