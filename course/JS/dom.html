@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/icon_js.png"/>
     <link rel="stylesheet" href="../../styles/nav_style.css"/>
     <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/dom_style.css"/>
 </head>
 <body>
     <header>
@@ -49,32 +50,112 @@
         </nav>
     </header>
     <main>
-    <h1 id="principal-title">DOM.</h1>
-    <p>Este modelo de trabajo permite modificar todos los objetos que tenga en algun documento HTML por medio de los selectores.</p>
-    <h2>Selectores</h2>
-    <ul>
-        <li class="elemento-selector"><b>Clases (class): </b>Tienen caracteristica que pueden ir en multiples elementos</li>
-        <li class="elemento-selector"><b>IDs (id): </b> Tienen la caracteristica de que son unicos</li>
-        <li><b>Etiquetas</b> (h1, p, img, div, section, ul, li, ...)</li>
-    </ul>
-    <p id="parrafo"></p>     
-    <form action="">
-        <label>Nombre</label>
-        <input type="text" id="nombre">
-        <input type="button" id="boton-formulario" value="Mostrar">
-    </form>
-    <p id="resultadoFormulario"></p>
-    <h2>Ejercicio calculadora</h2>
-    <form>
-        <label>Ingrese el numero 1</label>
-        <input type="number" id="num1"><br>
-        <label>Ingrese el numero 2</label>
-        <input type="number" id="num2"><br>
-        <input type="button" id="sumar" value="Sumar">
-        <input type="button" id="restar" value="Restar">
-        <input type="button" id="multi" value="Multiplicar">
-        <input type="button" id="dividir" value="Dividir">
-    </form>
-    <p id="resultadoCalculadora"></p>
+        <h1 id="principal-title">DOM (Document Object Model)</h1>
+        <p>El DOM permite modificar todos los objetos que tenga en algún documento HTML por medio de los selectores.</p>
+        <h2>Selectores</h2>
+        <table border="solid">
+            <tr>
+                <th>Selector</th>
+                <th>Descripción</th>
+                <th>Identificación</th>
+                <th>Utilización</th>
+            </tr>
+            <tr>
+                <td>Etiqueta</td>
+                <td>Hace referencia a cualquier elemento que posea la misma etiqueta.</td>
+                <td><code>&lt;tag&gt;</code></td>
+                <td><code>document.getElementsByTagName("tag")</code></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Las clases se pueden utilizar en multiples elementos.</td>
+                <td><code>&lt;tag class="class_name"&gt;</code></td>
+                <td><code>document.getElementsByClassName("class_name")</code></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
+                <td><code>&lt;tag id="id_name"&gt;</code></td>
+                <td><code>document.getElementById("id_name")</code></td>
+            </tr>
+        </table>
+        
+        <h2>Ejemplo: calculadora</h2>
+        <form>
+            <label>Ingrese el numero 1</label>
+            <input type="number" class="numero"><br>
+            <label>Ingrese el numero 2</label>
+            <input type="number" class="numero"><br>
+            <input type="button" id="suma" value="Sumar">
+            <input type="button" id="resta" value="Restar">
+            <input type="button" id="multiplicacion" value="Multiplicar">
+            <input type="button" id="division" value="Dividir">
+        </form>
+        <p id="resultadoCalculadora"></p>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="../HTML/images/icon_html5.png" width="3%"></figure>
+<pre class="code_box">
+&lt;<span class="tag_color">form</span>&gt;
+    &lt;<span class="tag_color">label</span>&gt;Ingrese el numero 1&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"number"</span> <span class="attribute_color">class</span>=<span class="value_color">"numero"</span>&gt;&lt;<span class="tag_color">br</span>&gt;
+    &lt;<span class="tag_color">label</span>&gt;Ingrese el numero 2&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"number"</span> <span class="attribute_color">class</span>=<span class="value_color">"numero"</span>&gt;&lt;<span class="tag_color">br</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">id</span>=<span class="value_color">"suma"</span> <span class="attribute_color">value</span>=<span class="value_color">"sumar"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">id</span>=<span class="value_color">"resta"</span> <span class="attribute_color">value</span>=<span class="value_color">"restar"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">id</span>=<span class="value_color">"multiplicacion"</span> <span class="attribute_color">value</span>=<span class="value_color">"multiplicar"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">id</span>=<span class="value_color">"division"</span> <span class="attribute_color">value</span>=<span class="value_color">"dividir"</span>&gt;
+&lt;/<span class="tag_color">form</span>&gt;
+&lt;<span class="tag_color">p</span> <span class="attribute_color">id</span>=<span class="value_color">"resultadoCalculadora"</span>&gt;&lt;/<span class="tag_color">p</span>&gt;
+</pre>
+            <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Captura de elementos HTML por medio del DOM y su selector</span>
+<span class="comment_color">//Document hace referencia al documento HTML</span>
+<span class="tag_color">let</span> botonSuma <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"suma"</span>)
+<span class="tag_color">let</span> botonResta <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"resta"</span>)
+<span class="tag_color">let</span> botonMultiplicacion <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"multiplicacion"</span>)
+<span class="tag_color">let</span> botonDivision <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"division"</span>)
+<span class="tag_color">let</span> resultado
+
+<span class="tag_color">function</span> <span class="attribute_color">operacion</span>(<span class="parameter_color">operador</span>){
+    <span class="comment_color">//Value captura los valores de entrada de un formulario por medio del selector</span>
+    <span class="comment_color">//Para acceder a un elemento en especifico se necesita especificar la posición</span>
+    <span class="tag_color">let</span> numeroUno <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementsByClassName</span>(<span class="value_color">"numero"</span>)[<span class="value_style_color">0</span>].value
+    <span class="tag_color">let</span> numeroDos <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementsByClassName</span>(<span class="value_color">"numero"</span>)[<span class="value_style_color">1</span>].value
+    <span class="tag_color">if</span> (operador<span class="tag_color">==</span><span class="value_color">"suma"</span>){
+        <span class="comment_color">//Con los valores obtenidos se realiza el evento predefinido</span>
+        resultado <span class="tag_color">=</span> <span class="style_color">parseInt</span>(numeroUno)<span class="tag_color">+</span><span class="style_color">parseInt</span>(numeroDos)
+    }
+    <span class="tag_color">else if</span> (operador<span class="tag_color">==</span><span class="value_color">"resta"</span>){
+        resultado <span class="tag_color">=</span> <span class="style_color">parseInt</span>(numeroUno)<span class="tag_color">-</span><span class="style_color">parseInt</span>(numeroDos)
+    }
+    <span class="tag_color">else if</span> (operador<span class="tag_color">==</span><span class="value_color">"multiplicacion"</span>){
+        resultado <span class="tag_color">=</span> <span class="style_color">parseInt</span>(numeroUno)<span class="tag_color">*</span><span class="style_color">parseInt</span>(numeroDos)
+    }
+    <span class="tag_color">else if</span> (operador<span class="tag_color">==</span><span class="value_color">"division"</span>){
+        resultado <span class="tag_color">=</span> <span class="style_color">parseInt</span>(numeroUno)<span class="tag_color">/</span><span class="style_color">parseInt</span>(numeroDos)
+    }
+    <span class="tag_color">let</span> impresionResultado <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"resultadoCalculadora"</span>)
+    impresionResultado.textContent <span class="tag_color">=</span> <span class="value_color">`El resultado es:</span> ${resultado}<span class="value_color">`</span>
+}
+<span class="comment_color">//AddEventListener crea eventos</span>
+botonSuma.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+    <span class="style_color">operacion</span>(<span class="value_color">"suma"</span>)
+})
+botonResta.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+    <span class="style_color">operacion</span>(<span class="value_color">"resta"</span>)
+})
+botonMultiplicacion.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+    <span class="style_color">operacion</span>(<span class="value_color">"multiplicacion"</span>)
+})
+botonDivision.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+    <span class="style_color">operacion</span>(<span class="value_color">"division"</span>)
+})
+</pre>
+        </div>
+
+    </main>
+    <script src="scripts/dom.js"></script>
 </body>
 </html>
