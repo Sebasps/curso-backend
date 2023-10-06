@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Ejercicio: Calculadora</title>
+    <link rel="shortcut icon" href="../images/icon_js.png"/>
+    <link rel="stylesheet" href="../../../styles/nav_style.css"/>
+    <link rel="stylesheet" href="../../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/calculadora.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-area">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href=" ">CURSOS</a>
+                    <ul>
+                        <li><a href="#">HTML</a>
+                            <ul>
+                                <li><a href="../../HTML/texto-multimedia.html">Texto y multimedia</a></li>
+                                <li><a href="../../HTML/listas-tablas.html">Listas y tablas</a></li>
+                                <li><a href="../../HTML/enlaces-formularios.html">Enlaces y formularios</a></li>
+                                <li><a href="../../HTML/semantica-selectores.html">Semantica y selectores</a></li>
+                                <li><hr></li>
+                                <li><a href="../../HTML/exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../CSS/estilos.html">CSS</a></li>
+                        <li><a href="#">JS</a>
+                            <ul>
+                                <li><a href="../sintaxis_basica.html">Sintaxis Básica</a></li>
+                                <li><a href="../estructuras_control.html">Estructuras de control</a></li>
+                                <li><a href="../funciones.html">Funciones</a></li>
+                                <li><a href="../arreglos-objetos.html">Arreglos y objetos</a></li>
+                                <li><a href="../poo.html">POO</a></li>
+                                <li><a href="../json.html">JSON</a></li>
+                                <li><a href="../api_fetch.html">API FETCH</a></li>
+                                <li><a href="../dom.html">DOM</a></li>
+                                <li><a href="../localStorage.html">LocalStorage</a></li>
+                                <li><hr></li>
+                                <li><a href="exercises/lista.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <h1>Calculadora</h1>
+
+        <form id="calculator">
+            <input id="response" type="text" disabled="disabled">
+            <input class="number" type="button" value="7">
+            <input class="number" type="button" value="8">
+            <input class="number" type="button" value="9">
+            <input class="operator" type="button" value="/">
+
+            <input class="number" type="button" value="4">
+            <input class="number" type="button" value="5">
+            <input class="number" type="button" value="6">
+            <input class="operator" type="button" value="*">
+
+            <input class="number" type="button" value="1">
+            <input class="number" type="button" value="2">
+            <input class="number" type="button" value="3">
+            <input class="operator" type="button" value="-">
+
+            <input class="number" type="button" value=".">
+            <input class="number" type="button" value="0">
+            <input class="operator" type="button" value="=">
+            <input class="operator" type="button" value=+>  
+        </form>
+
+        <h2>Posible solución</h2>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="../../HTML/images/icon_html5.png" width="3%"></figure>
+<pre class="code_box">
+&lt;<span class="tag_color">form</span> <span class="attribute_color">id</span>=<span class="value_color">"calculator"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">id</span>=<span class="value_color">"response"</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">value</span>=<span class="value_color">"disabled"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"7"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"8"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"9"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"operator"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"/"</span>&gt;
+
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"4"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"5"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"6"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"operator"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"*"</span>&gt;
+
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"1"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"2"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"3"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"operator"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"-"</span>&gt;
+
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"."</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"number"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"0"</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"operator"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"="</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">class</span>=<span class="value_color">"operator"</span> <span class="attribute_color">type</span>=<span class="value_color">"button"</span> <span class="attribute_color">value</span>=<span class="value_color">"+"</span>&gt;
+&lt;/<span class="tag_color">form</span>&gt;
+</pre>
+            <figure class="build"><img src="../../CSS/images/icon_css3.png" width="3%"></figure>
+<pre class="code_box">
+<span class="attribute_color">#calculator</span>{
+    <span class="style_color">width</span>: <span class="value_style_color">110px</span>;
+    <span class="style_color">margin</span>: <span class="style_color">auto</span>;
+    <span class="style_color">border</span>: <span class="style_color">solid</span>;
+    <span class="style_color">padding</span>: <span class="value_style_color">10px</span>;
+    <span class="style_color">display</span>: <span class="style_color">grid</span>;
+    <span class="style_color">grid-template-columns</span>: <span class="value_style_color">25% 25% 25% 25%</span>;
+    <span class="style_color">gap</span>: <span class="value_style_color">0.5em 0.12em</span>;
+    <span class="style_color">background-color</span>: <span class="style_color">black</span>;
+}
+<span class="attribute_color">#response</span>{
+    <span class="style_color">grid-column</span>: <span class="value_style_color">1</span><span class="tag_color">/</span><span class="value_style_color">5</span>;
+    <span class="style_color">width</span>: <span class="value_style_color">100px</span>;
+    <span class="style_color">height</span>: <span class="value_style_color">20px</span>;
+    <span class="style_color">margin-bottom</span>: <span class="value_style_color">5px</span>;
+    <span class="style_color">border</span>: <span class="style_color">solid</span>;
+    <span class="style_color">text-align</span>: <span class="style_color">right</span>;
+    <span class="style_color">color</span>: <span class="style_color">white</span>;
+}
+<span class="attribute_color">.number</span>, <span class="attribute_color">.operator</span>{
+    <span class="style_color">width</span>: <span class="value_style_color">20px</span>;
+    <span class="style_color">background-color</span>: <span class="style_color">grey</span>;
+    <span class="style_color">color</span>: <span class="style_color">white</span>;
+}
+</pre>
+            <figure class="build"><img src="../../JS/images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">let</span> display <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"response"</span>)
+<span class="tag_color">let</span> numbers <span class="tag_color">=</span> <span class="style_color">Array</span>.<span class="style_color">from</span>(<span class="style_color">document</span>.<span class="style_color">getElementsByClassName</span><span class="value_color">"number"</span>)
+<span class="tag_color">let</span> operators <span class="tag_color">=</span> <span class="style_color">Array</span>.<span class="style_color">from</span>(<span class="style_color">document</span>.<span class="style_color">getElementsByClassName</span><span class="value_color">"operator"</span>)
+<span class="tag_color">const</span> cuenta <span class="tag_color">=</span> []
+
+numbers.<span class="style_color">forEach</span>(<span class="parameter_color">number</span> <span class="tag_color">=></span> {
+    number.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+        display.value <span class="tag_color">=</span> display.value<span class="tag_color">+</span><span class="parameter_color">this</span>.value
+    })
+})
+operators.<span class="style_color">forEach</span>(<span class="parameter_color">operator</span> <span class="tag_color">=></span> {
+    operator.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>,<span class="tag_color">function</span>(){
+        <span class="tag_color">if</span> (<span class="parameter_color">this</span>.value<span class="tag_color">!=</span><span class="value_color">"="</span>){
+            <span class="tag_color">if</span> (<span class="parameter_color">this</span>.value<span class="tag_color">==</span><span class="value_color">"-"</span> <span class="tag_color">&&</span> display.value <span class="tag_color">==</span><span class="value_color">""</span>){
+                display.value <span class="tag_color">=</span> <span class="value_color">"-"</span>
+            }
+            <span class="tag_color">else</span>{
+                cuenta.<span class="style_color">push</span>(<span class="style_color">parseFloat</span>(display.value))
+                cuenta.<span class="style_color">push</span>(<span class="parameter_color">this</span>.value)
+                display.value <span class="tag_color">=</span> <span class="value_color">""</span>
+            }
+        }
+        <span class="tag_color">else</span>{
+            cuenta.<span class="style_color">push</span>(<span class="style_color">parseFloat</span>(display.value))
+            <span class="tag_color">let</span> resultado <span class="tag_color">=</span> cuenta[<span class="value_style_color">0</span>]
+            <span class="tag_color">for</span> (<span class="tag_color">let</span> i<span class="tag_color">=</span><span class="value_style_color">0</span>; i<span class="tag_color">&lt;</span>cuenta.length; i<span class="tag_color">++</span>){
+                <span class="tag_color">if</span>(cuenta[i]<span class="tag_color">==</span><span class="value_color">"+"</span>){
+                    resultado <span class="tag_color">=</span> resultado<span class="tag_color">+</span>cuenta[i<span class="tag_color">+</span><span class="value_style_color">1</span>]
+                }
+                <span class="tag_color">else if</span>(cuenta[i]<span class="tag_color">==</span><span class="value_color">"-"</span>){
+                    resultado <span class="tag_color">=</span> resultado<span class="tag_color">-</span>cuenta[i<span class="tag_color">+</span><span class="value_style_color">1</span>]
+                }
+                <span class="tag_color">else if</span>(cuenta[i]<span class="tag_color">==</span><span class="value_color">"*"</span>){
+                    resultado <span class="tag_color">=</span> resultado<span class="tag_color">*</span>cuenta[i<span class="tag_color">+</span><span class="value_style_color">1</span>]
+                }
+                <span class="tag_color">else if</span>(cuenta[i]<span class="tag_color">==</span><span class="value_color">"/"</span>){
+                    resultado <span class="tag_color">=</span> resultado<span class="tag_color">/</span>cuenta[i<span class="tag_color">+</span><span class="value_style_color">1</span>]
+                }
+            }
+            display.value <span class="tag_color">=</span> resultado
+        }
+    })
+})
+</pre>
+        </div>
+
+        </section>
+    </main>
+    <script src="scripts/calculadora.js"></script>
+</body>
+</html>

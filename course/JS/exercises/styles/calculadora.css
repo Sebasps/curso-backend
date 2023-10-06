@@ -1,0 +1,24 @@
+#calculator{
+	width: 110px;
+	margin: auto;
+	border: solid;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 0.5em 0.12em;
+	background-color: black;
+}
+#response{
+	grid-column: 1/5;
+	width: 100px;
+	height: 20px;
+	margin-bottom: 5px;
+	border: solid;
+	text-align: right;
+	color: white;
+}
+.number, .operator{
+	width: 20px;
+	background-color: grey;
+	color: white;
+}
