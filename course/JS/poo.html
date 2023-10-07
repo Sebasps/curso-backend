@@ -50,16 +50,117 @@
     </header>
     <main>
         <section>
-            <h1>Programación orientada a objetos</h1>
+            <h1>POO (Programación orientada a objetos)</h1>
             <h2>Objetos</h2>
-            <p>Un objeto no es más que la abstracción de algun objeto en la vida real pero en programación</p>
+            <p>Un objeto es la abstracción de algun objeto en la vida real pero en programación.</p>
             <h2>Atributos</h2>
-            <p>Un atributo es una caracteristica propia de algun objeto</p>
+            <p>Un atributo es una caracteristica propia de algún objeto.</p>
             <h2>Metodos</h2>
-            <p>Un metodo es una acción propia que realiza algun objeto</p>
+            <p>Un metodo es una acción propia que realiza algún objeto.</p>
             <h2>Clase</h2>
-            <p>Una plantilla o molde sobre el cual podemos crear MUCHOS objetos</p>
+            <p>Una clase es una plantilla o molde que se utiliza para crear objetos similares con propiedades comunes.</p>
+
+            <div class="boxes_content">
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Definicion de clase</span>
+<span class="tag_color">class</span> <span class="attribute_color">Animal</span>(){
+    <span class="comment_color">//Metodo constructor crea e inicializa un objeto creado por una clase</span>
+    <span class="attribute_color">constructor</span>(<span class="parameter_color">especie</span>,<span class="parameter_color">edad</span>){
+        <span class="comment_color">//Atributos compartidos por los animales creados por la clase Animal</span>
+        <span class="comment_color">//This hace referencia a la misma clase</span>
+        <span class="parameter_color">this</span>.especie <span class="tag_color">=</span> especie
+        <span class="parameter_color">this</span>.edad <span class="tag_color">=</span> edad
+    }
+    <span class="attribute_color">hablar</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Sonido..."</span>
+    }
+    <span class="attribute_color">moverse</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Moviendose..."</span>
+    }
+</pre>
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+                <div class="columns">
+<pre class="code_box">
+<span class="comment_color">//Definición de un objeto sin clases</span>
+<span class="tag_color">const</span> perro <span class="tag_color">=</span> {
+    especie: <span class="value_color">"perro"</span>,
+    edad: <span class="value_style_color">undefined</span>,
+    <span class="attribute_color">hablar</span>: <span class="tag_color">function</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Guau"</span>
+    }
+}
+perro.edad <span class="tag_color">=</span> <span class="value_style_color">8</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(perro)
+</pre>
+<pre class="code_box">
+<span class="comment_color">//Definición de un objeto con clases</span>
+<span class="tag_color">const</span> gato <span class="tag_color">=</span> <span class="tag_color">new</span> Animal(<span class="value_color">"gato"</span>, <span class="value_style_color">7</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(gato)
+<span class="style_color">console</span>.<span class="style_color">log</span>(gato.<span class="style_color">hablar</span>())
+</pre>
+                </div>
+               <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+               <div class="columns">
+<pre class="code_box">
+<span class="comment_color">►</span> <span class="array_console_color">Object { especie<span class="comment_color">:</span> <span class="string_console_color">"perro"</span>, edad<span class="comment_color">:</span> <span class="number_console_color">8</span>, hablar<span class="comment_color">:</span> hablar() }</span>
+</pre>
+<pre class="code_box">
+<span class="comment_color">►</span> <span class="array_console_color">Object { especie<span class="comment_color">:</span> <span class="string_console_color">"gato"</span>, edad<span class="comment_color">:</span> <span class="number_console_color">7</span> }</span>
+<span class="comment_color">Sonido...</span>
+</pre> 
+                </div>
+                <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Herencia</span>
+<span class="tag_color">class</span> <span class="attribute_color">Perro</span> <span class="tag_color">extends</span> <span class="attribute_color">Animal</span>{
+    <span class="attribute_color">constructor</span>(<span class="parameter_color">especie</span>, <span class="parameter_color">edad</span>, <span class="parameter_color">nombre</span>){
+        <span class="comment_color">//Metodo super llama al constructor de la clase padre</span>
+        <span class="parameter_color">super</span>(especie, edad)
+        <span class="parameter_color">this</span>.nombre <span class="tag_color">=</span> <span class="value_style_color">null</span>
+    }
+    <span class="comment_color">//Sobreescritura de metodo</span>
+    <span class="attribute_color">hablar</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Guau"</span>
+    }
+    <span class="attribute_color">saludar</span>(){
+        <span class="tag_color">return</span> <span class="value_color">"Dando la pata..."</span>
+    }
+
+    <span class="comment_color">//Setters y getters</span>
+    <span class="comment_color">//Metodo set modifica algún atributo de la clase</span>
+    <span class="style_color">set</span> <span class="attribute_color">setNombre</span>(<span class="parameter_color">nombre</span>){
+        <span class="parameter_color">this</span>.nombre <span class="tag_color">=</span> nombre
+    }
+    <span class="comment_color">//Metodo get obtiene algún atributo de la clase</span>
+    <span class="style_color">get</span> <span class="attribute_color">getNombre</span>(){
+        <span class="tag_color">return</span> <span class="parameter_color">this</span>.nombre
+    }
+}
+
+<span class="comment_color">//Instanciar clase hijo</span>
+<span class="tag_color">const</span> labrador <span class="tag_color">=</span> <span class="tag_color">new</span> Perro(<span class="value_color">"perro"</span>, <span class="value_style_color">2</span>)
+<span class="comment_color">//Accede a metodos de la clase padre</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(labrador.<span class="style_color">moverse</span>())
+<span class="comment_color">//Accede a metodos de la clase hijo</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(labrador.<span class="style_color">hablar</span>())
+<span class="style_color">console</span>.<span class="style_color">log</span>(labrador.<span class="style_color">saludar</span>())
+
+labrador.setNombre <span class="tag_color">=</span> <span class="value_color">"Firulais"</span>
+<span class="style_color">console</span>.<span class="style_color">log</span>(labrador.<span class="style_color">getNombre</span>())
+</pre>
+                <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+Moviendose...
+Guau
+Dando la pata...
+
+Firulais
+</pre>
+            </div>
+
         </section>
     </main>
+    <script src="scripts/poo.JS"></script>
 </body>
 </html>
