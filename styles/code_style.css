@@ -8,6 +8,10 @@
     text-align: right;
     color: white;
 }
+.columns{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 .code_box{
     margin: 0px;
     border: 1px solid black;

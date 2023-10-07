@@ -1,11 +1,17 @@
 #links{
+    width: 350px;
     margin: auto;
     border: solid;
-    padding: 10px 0px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     text-align: center;
 }
-#links th{
-    padding: 5px 20px;
+#links p{
+    margin: 10px;
+}
+#links a{
+    margin: 10px;
 }
 
 .solid_table{

@@ -2,10 +2,6 @@ table{
 	margin: auto;
 }
 
-.code_box_content{
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
 .content_test_1{
 	height: 200px;
 	width: 50%;
