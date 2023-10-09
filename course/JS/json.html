@@ -49,7 +49,42 @@
         </nav>
     </header>
     <main>
-    <h1>JSON</h1>
-    <p>JSON no es más que un lenguaje que permite guardar información en javascript en forma de objetos</p>
+        <h1>JSON</h1>
+        <p>JSON es un lenguaje que permite guardar información en javascript en forma de objetos.</p>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Creación de un objeto persona</span>
+    <span class="tag_color">const</span> persona <span class="tag_color">=</span> {
+    <span class="comment_color">//Atributos</span>,
+    nombre: <span class="value_color">"Maria"</span>,
+    apellido: <span class="value_color">"Suarez"</span>,
+    edad: <span class="value_style_color">23</span>,
+    estatura: <span class="value_style_color">1.50</span>,
+    peso: <span class="value_color">50kg</span>,
+    sexo: <span class="value_color">F</span>,
+    fechaNacimiento: <span class="value_color">"06/03/2000"</span>,
+}
+
+<span class="comment_color">//Pasando de objeto en JS a formato JSON</span>
+<span class="tag_color">let</span> json_object = <span class="style_color">JSON</span>.<span class="style_color">stringify</span>(persona)
+<span class="style_color">console</span>.<span class="style_color">log</span>(<span class="value_color">"Objeto persona convertido a JSON:"</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(json_object)
+<span class="comment_color">//Pasando de formato JSON a objetos</span>
+<span class="tag_color">let</span> json_object = <span class="style_color">JSON</span>.<span class="style_color">parse</span>(persona)
+<span class="style_color">console</span>.<span class="style_color">log</span>(<span class="value_color">"Objeto persona convertido a JSON:"</span>)
+<span class="style_color">console</span>.<span class="style_color">log</span>(json_object)
+</pre>
+            <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+Objeto persona convertido a JSON:
+{"nombre":"Maria","apellido":"Suarez","edad":23,"estatura":1.5,"peso":"50kg","sexo":"F","fechaNacimiento":"06/03/2023"}
+JSON persona convertido de nuevo a objeto json.js:20:9
+<span class="comment_color">►</span> <span class="array_console_color">Object { nombre<span class="comment_color">:</span> <span class="string_console_color">"Maria"</span>, apellido<span class="comment_color">:</span> <span class="string_console_color">"Suarez"</span>, edad<span class="comment_color">:</span> <span class="number_console_color">23</span>, estatura<span class="comment_color">:</span> <span class="number_console_color">1.5</span>, peso<span class="comment_color">:</span> <span class="string_console_color">"50kg"</span>, sexo<span class="comment_color">:</span> <span class="string_console_color">"F"</span>, fechaNacimiento<span class="comment_color">:</span> <span class="string_console_color">"06/03/2023"</span>}</span>
+</pre>
+        </div>
+
+    </main>
 </body>
 </html>

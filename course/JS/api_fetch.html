@@ -49,13 +49,58 @@
         </nav>
     </header>
     <main>
-    <h1>API FETCH</h1>
-    <p>API FETCH no es más que una interfaz de javascript que permite realizar solicutdes HTTP</p>
-    <ul>
-        <li>GET (obtener)</li>
-        <li>POST (enviar)</li>
-        <li>PUT (actualizar)</li>
-        <li>DELETE (eliminar)</li>
-    </ul>
+        <h1>API FETCH</h1>
+        <p>API FETCH es una interfaz de javascript que permite realizar solicitudes HTTP.</p>
+        <ul>
+            <li>GET (obtener)</li>
+            <li>POST (enviar)</li>
+            <li>PUT (actualizar)</li>
+            <li>DELETE (eliminar)</li>
+        </ul>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">//Una API es un intermediario que puede ayudar en la comunicación de dos programas y así lograr compartir información</span>
+<span class="comment_color">//Fetch realiza una solicitud a la pagina de JSONPlaceholder</span>
+<span class="style_color">fetch</span>(<span class="value_color">"https://jsonplaceholder.typicode.com/users"</span>)
+<span class="comment_color">//Una vez se recibe una respuesta por parte de JSONplaceholder, esta se guarda en response con formato JSON</span>
+.<span class="style_color">then</span>(<span class="parameter_color">response</span> <span class="tag_color">=&gt;</span> response.<span class="style_color">json</span>())
+<span class="comment_color">//Por medio de data se accede a los datos</span>
+.<span class="style_color">then</span>(<span class="parameter_color">data</span> <span class="tag_color">=&gt;</span> {
+    data.<span class="style_color">forEach</span>(<span class="parameter_color">elemento</span> <span class="tag_color">=&gt;</span> {
+        <span class="style_color">console</span>.<span class="style_color">log</span>(<span class="value_color">`El nombre del usuario es: </span>${elemento.name}<span class="value_color">`</span>)
+    })
+})
+
+<span class="comment_color">//Catch captura errores si llegan a ocurrir</span>
+.<span class="style_color">catch</span>(<span class="parameter_color">e</span> <span class="tag_color">=&gt;</span> <span class="style_color">console</span>.<span class="style_color">error</span>(e))
+
+<span class="comment_color">//API FETCH Para el JSON de datos</span>
+<span class="style_color">fetch</span>(<span class="value_color">"datos.json"</span>)
+.<span class="style_color">then</span>(<span class="parameter_color">respuesta</span> <span class="tag_color">=&gt;</span> respuesta.<span class="style_color">json</span>())
+.<span class="style_color">then</span>(<span class="parameter_color">datos</span> <span class="tag_color">=&gt;</span> {
+    <span class="style_color">console</span>.<span class="style_color">log</span>(datos)
+    datos.<span class="style_color">forEach</span>(<span class="parameter_color">persona</span> <span class="tag_color">=&gt;</span> {
+        <span class="style_color">console</span>.<span class="style_color">log</span>(<span class="value_color">`</span>${persona.nombre} ${persona.apellido} <span class="value_color">tiene</span> ${persona.edad} <span class="value_color">y su numero de telefono es</span> ${persona.contacto.telefono}<span class="value_color">`</span>)
+    })
+})
+</pre>
+            <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+<pre class="code_box">
+El nombre del usuario es: Leanne Graham
+El nombre del usuario es: Ervin Howell
+El nombre del usuario es: Clementine Bauch
+El nombre del usuario es: Patricia Lebsack
+El nombre del usuario es: Chelsey Dietrich
+El nombre del usuario es: Mrs. Dennis Schulist
+El nombre del usuario es: Kurtis Weissnat
+El nombre del usuario es: Nicholas Runolfsdottir V
+El nombre del usuario es: Glenna Reichert
+El nombre del usuario es: Clementina DuBuque
+</pre>
+        </div>
+
+    </main>
 </body>
 </html>
