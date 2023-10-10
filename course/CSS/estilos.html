@@ -50,67 +50,66 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>CSS (Cascading Style Sheets)</h1>
-            <p>Es una hoja de estilo en cascada que va aplicando formato de forma descendente a los elementos en la página web.</p>
-            <section>
-                <h2>Selectores</h2>
-                <table border="solid">
-                    <tr>
-                        <th>Selector</th>
-                        <th>Descripción</th>
-                        <th>Identificación</th>
-                        <th>Utilización</th>
-                    </tr>
-                    <tr>
-                        <td>Etiqueta</td>
-                        <td>Hace referencia a cualquier elemento que posea la misma etiqueta.</td>
-                        <td><code>&lt;tag&gt;</code></td>
-                        <td><code>tag{}</code></td>
-                    </tr>
-                    <tr>
-                        <td>ID</td>
-                        <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
-                        <td><code>&lt;tag id="id_name"&gt;</code></td>
-                        <td><code>#id_name{}</code></td>
-                    </tr>
-                    <tr>
-                        <td>Class</td>
-                        <td>Las clases se pueden utilizar en multiples elementos.</td>
-                        <td><code>&lt;tag class="class_name"&gt;</code></td>
-                        <td><code>.class_name{}</code></td>
-                    </tr>
-                </table>
+        <h1>CSS (Cascading Style Sheets)</h1>
+        <p>Es una hoja de estilo en cascada que va aplicando formato de forma descendente a los elementos en la página web.</p>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="../HTML/images/icon_html5.png" width="3%"></figure>
+        <h2>Selectores</h2>
+        <table border="solid">
+            <tr>
+                <th>Selector</th>
+                <th>Descripción</th>
+                <th>Identificación</th>
+                <th>Utilización</th>
+            </tr>
+            <tr>
+                <td>Etiqueta</td>
+                <td>Hace referencia a cualquier elemento que posea la misma etiqueta.</td>
+                <td><code>&lt;tag&gt;</code></td>
+                <td><code>tag{}</code></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
+                <td><code>&lt;tag id="id_name"&gt;</code></td>
+                <td><code>#id_name{}</code></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Las clases se pueden utilizar en multiples elementos.</td>
+                <td><code>&lt;tag class="class_name"&gt;</code></td>
+                <td><code>.class_name{}</code></td>
+            </tr>
+        </table>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="../HTML/images/icon_html5.png" alt="HTML" width="3%"></figure>
 <pre class="code_box">
 &lt;<span class="tag_color">p</span> <span class="attribute_color">id</span>=<span class="value_color">"test_p"</span>&gt;¡Hola mundo!&lt;<span class="tag_color">p</span>&gt;
 </pre>
-                </div>
+        </div>
 
-                <h2>Tipografía</h2>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>font-family</td>
-                        <td>Cambia el tipo de letra del texto.</td>
-                    </tr>
-                    <tr>
-                        <td>font-size</td>
-                        <td>Cambia el tamaño de letra del texto.</td>
-                    </tr>
-                    <tr>
-                        <td>color</td>
-                        <td>Cambia el color del texto.</td>
-                    </tr>
-                </table>
+        <h2>Tipografía</h2>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Cambia el tipo de letra del texto.</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Cambia el tamaño de letra del texto.</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Cambia el color del texto.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">font-family</span>: <span class="value_color">arial</span>;
@@ -118,46 +117,46 @@
     <span class="style_color">color</span>: <span class="style_color">blueviolet</span>;
 }
 </pre>
-                </div>
+        </div>
 
-                <div class="content_test_1">
-                    <p id="p_1">¡Hola mundo!</p>
-                </div>
+        <div class="content_test_1">
+            <p id="p_1">¡Hola mundo!</p>
+        </div>
 
-                <h2>Estilos de texto</h2>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>text-align</td>
-                        <td>Alineación del texto.</td>
-                    </tr>
-                    <tr>
-                        <td>text-decoration</td>
-                        <td>Estilos del texto.</td>
-                    </tr>
-                    <tr>
-                        <td>text-transform</td>
-                        <td>Transformación del texto.</td>
-                    </tr>
-                    <tr>
-                        <td>text-indent</td>
-                        <td>Identación.</td>
-                    </tr>
-                    <tr>
-                        <td>letter-spacing</td>
-                        <td>Espacio entre letras.</td>
-                    </tr>
-                    <tr>
-                        <td>line-height</td>
-                        <td>Espacio entre líneas.</td>
-                    </tr>
-                </table>
+        <h2>Estilos de texto</h2>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Alineación del texto.</td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>Estilos del texto.</td>
+            </tr>
+            <tr>
+                <td>text-transform</td>
+                <td>Transformación del texto.</td>
+            </tr>
+            <tr>
+                <td>text-indent</td>
+                <td>Identación.</td>
+            </tr>
+            <tr>
+                <td>letter-spacing</td>
+                <td>Espacio entre letras.</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>Espacio entre líneas.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">text-decoration</span>: <span class="style_color">line-through</span>;
@@ -167,42 +166,42 @@
     <span class="style_color">line-height</span>: <span class="value_style_color">1,5</span>;
 }
 </pre>
-                </div>
+        </div>
 
-                <div class="content_test_1">
-                    <p id="p_2">¡Hola mundo!</p>
-                </div>
+        <div class="content_test_1">
+            <p id="p_2">¡Hola mundo!</p>
+        </div>
 
-                <h2>Background</h2>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>background-color</td>
-                        <td>Color de fondo.</td>
-                    </tr>
-                    <tr>
-                        <td>background-image</td>
-                        <td>Imagen de fondo.</td>
-                    </tr>
-                    <tr>
-                        <td>background-position</td>
-                        <td>Posición del fondo.</td>
-                    </tr>
-                    <tr>
-                        <td>background-size</td>
-                        <td>Tamaño del fondo.</td>
-                    </tr>
-                    <tr>
-                        <td>background-repeat</td>
-                        <td>Repetición del fondo.</td>
-                    </tr>
-                </table>
+        <h2>Background</h2>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Color de fondo.</td>
+            </tr>
+            <tr>
+                <td>background-image</td>
+                <td>Imagen de fondo.</td>
+            </tr>
+            <tr>
+                <td>background-position</td>
+                <td>Posición del fondo.</td>
+            </tr>
+            <tr>
+                <td>background-size</td>
+                <td>Tamaño del fondo.</td>
+            </tr>
+            <tr>
+                <td>background-repeat</td>
+                <td>Repetición del fondo.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">background-color</span>: <span class="value_style_color">#FF4</span>;
@@ -211,45 +210,45 @@
     <span class="style_color">background-repeat</span>: <span class="style_color">no-repeat</span>;
 }
 </pre>
-                </div>
+        </div>
 
-                <div class="content_test_1">
-                    <p id="p_3">¡Hola mundo!</p>
-                </div>
+        <div class="content_test_1">
+            <p id="p_3">¡Hola mundo!</p>
+        </div>
 
-                <h2>Modelo de caja</h2>
-                <figure id="box_model">
-                    <img src="images/box_model.png" alt="Modelo caja" width="100%">
-                    <figcaption></figcaption>
-                </figure>
+        <h2>Modelo de caja</h2>
+        <figure id="box_model">
+            <img src="images/box_model.png" alt="Modelo caja" width="100%">
+            <figcaption></figcaption>
+        </figure>
 
-                <h3>Content</h3>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>width</td>
-                        <td>Modifica el ancho.</td>
-                    </tr>
-                    <tr>
-                        <td>height</td>
-                        <td>Modifica el alto.</td>
-                    </tr>
-                    <tr>
-                        <td>max-width<br>min-width</td>
-                        <td>Define el máximo o el mínimo ancho.</td>
-                    </tr>
-                    <tr>
-                        <td>max-height<br>min-height</td>
-                        <td>Define el máximo o el mínimo alto.</td>
-                    </tr>
-                </table>
+        <h3>Content</h3>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Modifica el ancho.</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Modifica el alto.</td>
+            </tr>
+            <tr>
+                <td>max-width<br>min-width</td>
+                <td>Define el máximo o el mínimo ancho.</td>
+            </tr>
+            <tr>
+                <td>max-height<br>min-height</td>
+                <td>Define el máximo o el mínimo alto.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
-                    <div class="columns">
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
+            <div class="columns">
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">width</span>: <span class="value_style_color">200px</span>;
@@ -262,45 +261,45 @@
     <span class="style_color">min-height</span>: <span class="value_style_color">100px</span>;
 }
 </pre>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div class="content_test_2">
-                    <div id="subcontent_1">
-                        <p id="p_4">¡Hola mundo!</p>
-                    </div>
-                    <div id="subcontent_2">
-                        <p id="p_5">¡Hola mundo!</p>
-                    </div>
-                </div>
-                
-                <h3>Border</h3>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>border-color</td>
-                        <td>Modifica el color del borde.</td>
-                    </tr>
-                    <tr>
-                        <td>border-style</td>
-                        <td>Modifica el estilo del borde.</td>
-                    </tr>
-                    <tr>
-                        <td>border-width</td>
-                        <td>Modifica el ancho del borde.</td>
-                    </tr>
-                    <tr>
-                        <td>border</td>
-                        <td>Agrupa las propiedades de border.</td>
-                    </tr>
-                </table>
+        <div class="content_test_2">
+            <div id="subcontent_1">
+                <p id="p_4">¡Hola mundo!</p>
+            </div>
+            <div id="subcontent_2">
+                <p id="p_5">¡Hola mundo!</p>
+            </div>
+        </div>
+        
+        <h3>Border</h3>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td>Modifica el color del borde.</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td>Modifica el estilo del borde.</td>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>Modifica el ancho del borde.</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Agrupa las propiedades de border.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
-                    <div class="columns">
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
+            <div class="columns">
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">border-color</span>: <span class="value_style_color">#FF5733</span>;
@@ -313,41 +312,41 @@
     <span class="style_color">padding</span>: <span class="value_style_color">#FF5733</span> <span class="style_color">solid</span> <span class="value_style_color">2px</span>;
 }
 </pre>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div class="content_test_2">
-                    <div id="subcontent_1">
-                        <p id="p_6">¡Hola mundo!</p>
-                    </div>
-                    <div id="subcontent_2">
-                        <p id="p_7">¡Hola mundo!</p>
-                    </div>
-                </div>
+        <div class="content_test_2">
+            <div id="subcontent_1">
+                <p id="p_6">¡Hola mundo!</p>
+            </div>
+            <div id="subcontent_2">
+                <p id="p_7">¡Hola mundo!</p>
+            </div>
+        </div>
 
-                <h3>Padding</h3>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>padding-left<br>padding-right</td>
-                        <td>Establece relleno a un elemento en derecha o izquierda.</td>
-                    </tr>
-                    <tr>
-                        <td>padding-top<br>padding-bottom</td>
-                        <td>Establece relleno a un elemento arriba o abajo.</td>
-                    </tr>
-                    <tr>
-                        <td>padding</td>
-                        <td>Establece relleno a un elemento.</td>
-                    </tr>
-                </table>
+        <h3>Padding</h3>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>padding-left<br>padding-right</td>
+                <td>Establece relleno a un elemento en derecha o izquierda.</td>
+            </tr>
+            <tr>
+                <td>padding-top<br>padding-bottom</td>
+                <td>Establece relleno a un elemento arriba o abajo.</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Establece relleno a un elemento.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
-                    <div class="columns">
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
+            <div class="columns">
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">padding-top</span>: <span class="value_style_color">30px</span>;
@@ -363,41 +362,41 @@
     <span class="style_color">padding</span>: <span class="value_style_color">30px 15px 20px 50px</span>;
 }
 </pre>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div class="content_test_2">
-                    <div id="subcontent_1">
-                        <p id="p_8">¡Hola mundo!</p>
-                    </div>
-                    <div id="subcontent_2">
-                        <p id="p_9">¡Hola mundo!</p>
-                    </div>
-                </div>
+        <div class="content_test_2">
+            <div id="subcontent_1">
+                <p id="p_8">¡Hola mundo!</p>
+            </div>
+            <div id="subcontent_2">
+                <p id="p_9">¡Hola mundo!</p>
+            </div>
+        </div>
 
-                <h3>Margin</h3>
-                <table border="solid">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td>margin-left<br>margin-right</td>
-                        <td>Establece un margen a un elemento en derecha o izquierda.</td>
-                    </tr>
-                    <tr>
-                        <td>margin-top<br>margin-bottom</td>
-                        <td>Establece un margen a un elemento arriba o abajo.</td>
-                    </tr>
-                    <tr>
-                        <td>margin</td>
-                        <td>Establece un margen a un elemento.</td>
-                    </tr>
-                </table>
+        <h3>Margin</h3>
+        <table border="solid">
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>margin-left<br>margin-right</td>
+                <td>Establece un margen a un elemento en derecha o izquierda.</td>
+            </tr>
+            <tr>
+                <td>margin-top<br>margin-bottom</td>
+                <td>Establece un margen a un elemento arriba o abajo.</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Establece un margen a un elemento.</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_css3.png" width="3%"></figure>
-                    <div class="columns">
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_css3.png" alt="CSS" width="3%"></figure>
+            <div class="columns">
 <pre class="code_box">
 <span class="attribute_color">#test_p</span>{
     <span class="style_color">margin-top</span>: <span class="value_style_color">30px</span>;
@@ -413,20 +412,18 @@
     <span class="style_color">margin</span>: <span class="value_style_color">30px 15px 20px 50px</span>;
 }
 </pre>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div class="content_test_2">
-                    <div id="subcontent_1">
-                        <p id="p_10">¡Hola mundo!</p>
-                    </div>
-                    <div id="subcontent_2">
-                        <p id="p_11">¡Hola mundo!</p>
-                    </div>
-                </div>
+        <div class="content_test_2">
+            <div id="subcontent_1">
+                <p id="p_10">¡Hola mundo!</p>
+            </div>
+            <div id="subcontent_2">
+                <p id="p_11">¡Hola mundo!</p>
+            </div>
+        </div>
 
-            </section>
-        </section>
     </main>
 </body>
 </html>

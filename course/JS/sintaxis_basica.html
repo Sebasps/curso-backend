@@ -50,77 +50,69 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Sintaxis básica</h1>
-            <p>En JS al terminar una linea de codigo no es necesario (<code>;</code>), pero no genera algun conflicto si se llega a poner.</p>
-            <section>
-                <h2>Variables</h2>
-                <h3>Variables globales</h3>
-                <p>Datos que pueden cambiar en cualquier lugar.</p>
+        <h1>Sintaxis básica</h1>
+        <p>En JS al terminar una linea de codigo no es necesario (<code>;</code>), pero no genera algun conflicto si se llega a poner.</p>
+        <h2>Variables</h2>
+        <h3>Variables globales</h3>
+        <p>Datos que pueden cambiar en cualquier lugar.</p>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Declaración e inicialización de variable global</span>
 <span class="tag_color">var</span> variable_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"</span>
 </pre>
-                </div>
+        </div>
 
-            <h3>Variables locales</h3>
-            <p>Datos que solo pueden cambiar en un bloque.</p>
+        <h3>Variables locales</h3>
+        <p>Datos que solo pueden cambiar en un bloque.</p>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Declaración e inicialización de variable local</span>
 <span class="tag_color">let</span> variable_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"
 </pre>
-                </div>
+        </div>
 
-            </section>
+        <h2>Constantes</h2>    
+        <p>Datos que no pueden cambiar.</p>
 
-            <section>
-            <h2>Constantes</h2>    
-            <p>Datos que no pueden cambiar.</p>
-
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Declaración e inicialización de constante</span>
 <span class="tag_color">const</span> constant_name <span class="tag_color">=</span> <span class="value_color">"assigned_value"</span>
 </pre>
-                </div>
+        </div>
 
-            </section>
+        <h2>Tipo de datos</h2>
+        <table border="solid">
+            <tr>
+                <th>Tipo</th>
+                <th>Descripción</th>
+                <th>Declaración</th>
+            </tr>
+            <tr>
+                <td>Numérico</td>
+                <td>Dato que tiene asignado un valor numérico.</td>
+                <td>Se declara el número sin utilizar comillas.</td>
+            </tr>
+            <tr>
+                <td>Lógico</td>
+                <td>Dato con dos posibles valores lógicos (verdadero o falso)</td>
+                <td>Se declara con las palabras reservadas true o false.</td>
+            </tr>
+                <td>Caracter</td>
+                <td>Dato que recibe cualquier tipo de texto.</td>
+                <td>Se declara con comillas.</td>
+            <tr>
+                
+            </tr>
+        </table>
 
-            <section>
-                <h2>Tipo de datos</h2>
-                <table border="solid">
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Descripción</th>
-                        <th>Declaración</th>
-                    </tr>
-                    <tr>
-                        <td>Numérico</td>
-                        <td>Dato que tiene asignado un valor numérico.</td>
-                        <td>Se declara el número sin utilizar comillas.</td>
-                    </tr>
-                    <tr>
-                        <td>Lógico</td>
-                        <td>Dato con dos posibles valores lógicos (verdadero o falso)</td>
-                        <td>Se declara con las palabras reservadas true o false.</td>
-                    </tr>
-                        <td>Caracter</td>
-                        <td>Dato que recibe cualquier tipo de texto.</td>
-                        <td>Se declara con comillas.</td>
-                    <tr>
-                        
-                    </tr>
-                </table>
-
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Una variable nula no tiene asignado algún valor</span>
 <span class="tag_color">let</span> variableNula <span class="tag_color">=</span> <span class="value_style_color">null</span>
@@ -137,43 +129,39 @@
 <span class="style_color">console</span>.<span class="style_color">log</span>(variableGlobal)
 <span class="style_color">console</span>.<span class="style_color">log</span>(PI)
 </pre>
-                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+            <figure class="build"><img src="images/icon_console.png" alt="Console" width="3%"></figure>
 <pre class="code_box">
 Segundo valor
 Primer valor
 <span class="number_console_color">true</span>
 <span class="number_console_color">3.1416</span>
 </pre>
-                </div>
+        </div>
 
-            </section>
+        <h2>Operadores</h2>
+        <table class="operators_table">
+            <tr>
+                <th colspan="3">Operadores aritmeticos</th>
+            </tr>
+            <tr>
+                <td>Suma<br>(<code>+</code>)</td>
+                <td>Multiplicación<br>(<code>*</code>)</td>
+                <td>Incremento<br>(<code>++</code>)</td>
+            </tr>
+            <tr>
+                <td>Resta<br>(<code>-</code>)</td>
+                <td>División<br>(<code>/</code>)</td>
+                <td>Decremento<br>(<code>--</code>)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Modulo<br>(<code>%</code>)</td>
+                <td></td>
+            </tr>
+        </table>
 
-            <section>
-                
-                <h2>Operadores</h2>
-                <table class="operators_table">
-                    <tr>
-                        <th colspan="3">Operadores aritmeticos</th>
-                    </tr>
-                    <tr>
-                        <td>Suma<br>(<code>+</code>)</td>
-                        <td>Multiplicación<br>(<code>*</code>)</td>
-                        <td>Incremento<br>(<code>++</code>)</td>
-                    </tr>
-                    <tr>
-                        <td>Resta<br>(<code>-</code>)</td>
-                        <td>División<br>(<code>/</code>)</td>
-                        <td>Decremento<br>(<code>--</code>)</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Modulo<br>(<code>%</code>)</td>
-                        <td></td>
-                    </tr>
-                </table>
-
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">let</span> numero1 <span class="tag_color">=</span> <span class="value_style_color">5</span>, numero2 <span class="tag_color">=</span> <span class="value_style_color">2</span>, resultado
 resultado<span class="tag_color"> = </span>(numero2<span class="tag_color">+</span>numero1<span class="tag_color">*</span>numero2)<span class="tag_color">/</span>(numero1<span class="tag_color">-</span>numero2)
@@ -186,33 +174,33 @@ resultado<span class="tag_color">--</span>
 resultado<span class="tag_color">--</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
-                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+            <figure class="build"><img src="images/icon_console.png" alt="Console" width="3%"></figure>
 <pre class="code_box">
 Resultado de (numero2+numero1*numero2)/(numero1-numero2): <span class="number_console_color">4</span>
 <span class="number_console_color">5</span>
 <span class="number_console_color">3</span>
 </pre>
-                </div>
+        </div>
 
 
-                <table class="operators_table">
-                    <tr>
-                        <th colspan="3">Operadores de comparación</th>
-                    </tr>
-                    <tr>
-                        <td>Mayor que<br>(<code>&gt;</code>)</td>
-                        <td>Mayor o igual que<br>(<code>&gt;=</code>)</td>
-                        <td>Igual<br>(<code>==</code>)</td>
-                    </tr>
-                    <tr>
-                        <td>Menor que<br>(<code>&lt;</code>)</td>
-                        <td>Menor o igual que<br>(<code>&lt;=</code>)</td>
-                        <td>Distinto<br>(<code>!=</code>)</td>
-                    </tr>
-                </table>
+        <table class="operators_table">
+            <tr>
+                <th colspan="3">Operadores de comparación</th>
+            </tr>
+            <tr>
+                <td>Mayor que<br>(<code>&gt;</code>)</td>
+                <td>Mayor o igual que<br>(<code>&gt;=</code>)</td>
+                <td>Igual<br>(<code>==</code>)</td>
+            </tr>
+            <tr>
+                <td>Menor que<br>(<code>&lt;</code>)</td>
+                <td>Menor o igual que<br>(<code>&lt;=</code>)</td>
+                <td>Distinto<br>(<code>!=</code>)</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">let</span> numero3 <span class="tag_color">=</span> <span class="value_color">"5"</span>
 resultado <span class="tag_color">=</span> numero1 <span class="tag_color">&gt;</span> numero2
@@ -226,28 +214,28 @@ resultado <span class="tag_color">=</span> numero1 <span class="tag_color">==</s
 resultado <span class="tag_color">=</span> numero1 <span class="tag_color">===</span> numero3
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
-                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+            <figure class="build"><img src="images/icon_console.png" alt="Console" width="3%"></figure>
 <pre class="code_box">
 <span class="number_console_color">true</span>
 <span class="number_console_color">false</span>
 <span class="number_console_color">true</span>
 <span class="number_console_color">false</span>
 </pre>
-                </div>
+        </div>
 
-                <table class="operators_table">
-                    <tr>
-                        <th colspan="3">Operadores lógicos</th>
-                    </tr>
-                    <tr>
-                        <td>Y<br>(<code>&&</code>)</td>
-                        <td>O<br>(<code>||</code>)</td>
-                        <td>Negación<br>(<code>!</code>)</td>
-                    </tr>
-                </table>
+        <table class="operators_table">
+            <tr>
+                <th colspan="3">Operadores lógicos</th>
+            </tr>
+            <tr>
+                <td>Y<br>(<code>&&</code>)</td>
+                <td>O<br>(<code>||</code>)</td>
+                <td>Negación<br>(<code>!</code>)</td>
+            </tr>
+        </table>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//El operador && devolverá verdadero unicamente si todos los elementos son verdaderos</span>
 resultado <span class="tag_color">=</span> <span class="value_style_color">true</span> <span class="tag_color">&&</span> <span class="value_style_color">false</span>
@@ -259,16 +247,14 @@ resultado <span class="tag_color">=</span> <span class="value_style_color">true<
 resultado <span class="tag_color">=!</span> <span class="value_style_color">true</span>
 <span class="style_color">console</span>.<span class="style_color">log</span>(resultado)
 </pre>
-                    <figure class="build"><img src="images/icon_console.png" width="3%"></figure>
+            <figure class="build"><img src="images/icon_console.png" alt="Console" width="3%"></figure>
 <pre class="code_box">
 <span class="number_console_color">false</span>
 <span class="number_console_color">true</span>
 <span class="number_console_color">false</span>
 </pre>
-                </div>
+        </div>
 
-            </section>
-        </section>
     </main>
 </body>
 </html>

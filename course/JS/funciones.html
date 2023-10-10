@@ -50,14 +50,13 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Funciones</h1>
-            <p>Conjunto de instrucciones que realizan una tarea especíﬁca.</p>
-            <h2>Declaradas</h2>
-            <p>Las funciones declaradas hacen parte del ambito global logrando ser llamadas desde cualquier parte del codigo.</p>
+        <h1>Funciones</h1>
+        <p>Conjunto de instrucciones que realizan una tarea especíﬁca.</p>
+        <h2>Declaradas</h2>
+        <p>Las funciones declaradas hacen parte del ambito global logrando ser llamadas desde cualquier parte del codigo.</p>
 
-               <div class="boxes_content">
-                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">//Definición de función</span>
 <span class="comment_color">//La solicitud de parametros no es obligatoria</span>
@@ -67,91 +66,90 @@
     <span class="tag_color">return</span> output
 }
 </pre>
-            </div>
+        </div>
 
-            <h2>Expresadas</h2>
-            <p>Las funciones expresadas hacen parte del ambito local al asignarse a una variable.</p>
+        <h2>Expresadas</h2>
+        <p>Las funciones expresadas hacen parte del ambito local al asignarse a una variable.</p>
 
-               <div class="boxes_content">
-                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">const</span> <span class="attribute_color">function_name</span><span class="tag_color"> = function</span>(<span class="parameter_color">parameters</span>){
     <span class="tag_color">return</span> output
 }
 </pre>
-            </div>
+        </div>
 
-            <h2>Flechas</h2>
-            <p>Es similar a una función expresada, pero se escribe de manera aún más compacta y con una sintaxis especíﬁca.</p>
+        <h2>Flechas</h2>
+        <p>Es similar a una función expresada, pero se escribe de manera aún más compacta y con una sintaxis especíﬁca.</p>
 
-               <div class="boxes_content">
-                     <figure class="build"><img src="images/icon_js.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
 <pre class="code_box">
 <span class="tag_color">const</span> <span class="attribute_color">function_name</span><span class="tag_color"> = function</span>(<span class="parameter_color">parameters</span>) <span class="tag_color">=></span> statement
 </pre>
-            </div>
+        </div>
 
-            <table border="solid">
-                <tr>
-                    <th>Función</th>
-                    <th>Ventajas</th>
-                    <th>Desventajas</th>
-                </tr>
-                <tr>
-                    <td>Declarada</td>
-                    <td>
-                        <ul>
-                            <li>Fácil de leer y entender.</li>
-                            <li>Puede ser llamada antes de ser declarada en el código.</li>
-                            <li>Útil para deﬁnir funciones que se utilizarán varias veces en el código.</li>
-                            <li>Fácilmente accesible desde cualquier parte del código.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>No es tan versátil como las funciones expresadas o ﬂecha.</li>
-                            <li>Puede contaminar el ámbito global de la aplicación.</li>
-                            <li>No es posible reasignarla a otra variable.</li>
-                            <li>No es recomendable utilizarla en casos de funciones más cortas.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Expresada</td>
-                    <td>
-                        <ul>
-                            <li>Fácilmente accesible desde cualquier parte del código.</li>
-                            <li>Permite asignar una función a una variable.</li>
-                            <li>Útil para deﬁnir funciones en el momento que se necesitan.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Puede ser más difícil de leer y entender cuando se tienen varias funciones expresadas en el mismo bloque de código.</li>
-                            <li>No se puede llamar antes de ser deﬁnida.</li>
-                            <li>No es recomendable utilizarla en casos de funciones muy largas.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Flecha</td>
-                    <td>
-                        <ul>
-                            <li>Sintaxis más clara y corta que la función expresada.</li>
-                            <li>Es más fácil de usar con funciones de orden superior.</li>
-                            <li>Útil para deﬁnir funciones cortas y simples.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>No se puede utilizar para deﬁnir métodos en objetos.</li>
-                            <li>Puede ser más difícil de depurar cuando hay errores de sintaxis.</li>
-                            <li>No es recomendable utilizarla en casos de funciones muy largas.</li>
-                        </ul>
-                    </td>
-                </tr>               
-            </table>
-        </section>
+        <table border="solid">
+            <tr>
+                <th>Función</th>
+                <th>Ventajas</th>
+                <th>Desventajas</th>
+            </tr>
+            <tr>
+                <td>Declarada</td>
+                <td>
+                    <ul>
+                        <li>Fácil de leer y entender.</li>
+                        <li>Puede ser llamada antes de ser declarada en el código.</li>
+                        <li>Útil para deﬁnir funciones que se utilizarán varias veces en el código.</li>
+                        <li>Fácilmente accesible desde cualquier parte del código.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>No es tan versátil como las funciones expresadas o ﬂecha.</li>
+                        <li>Puede contaminar el ámbito global de la aplicación.</li>
+                        <li>No es posible reasignarla a otra variable.</li>
+                        <li>No es recomendable utilizarla en casos de funciones más cortas.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Expresada</td>
+                <td>
+                    <ul>
+                        <li>Fácilmente accesible desde cualquier parte del código.</li>
+                        <li>Permite asignar una función a una variable.</li>
+                        <li>Útil para deﬁnir funciones en el momento que se necesitan.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Puede ser más difícil de leer y entender cuando se tienen varias funciones expresadas en el mismo bloque de código.</li>
+                        <li>No se puede llamar antes de ser deﬁnida.</li>
+                        <li>No es recomendable utilizarla en casos de funciones muy largas.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Flecha</td>
+                <td>
+                    <ul>
+                        <li>Sintaxis más clara y corta que la función expresada.</li>
+                        <li>Es más fácil de usar con funciones de orden superior.</li>
+                        <li>Útil para deﬁnir funciones cortas y simples.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>No se puede utilizar para deﬁnir métodos en objetos.</li>
+                        <li>Puede ser más difícil de depurar cuando hay errores de sintaxis.</li>
+                        <li>No es recomendable utilizarla en casos de funciones muy largas.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

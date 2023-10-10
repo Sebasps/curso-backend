@@ -50,37 +50,35 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Etiquetas semanticas y selectores HTML</h1>
-            <section>
-                <h2>Selectores</h2>
-                <p>Los selectores permiten identificar distintos elementos en el documento HTML para hacer cambios en especifico.</p>
+        <h1>Etiquetas semanticas y selectores HTML</h1>
+        <h2>Selectores</h2>
+        <p>Los selectores permiten identificar distintos elementos en el documento HTML para hacer cambios en especifico.</p>
 
-                <table border="solid">
-                    <tr>
-                        <th>Selector</th>
-                        <th>Descripción</th>
-                        <th>Identificación</th>
-                        <th>Utilización</th>
-                    </tr>
-                    <tr>
-                        <td>ID</td>
-                        <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
-                        <td><code>&lt;tag id="id_name"&gt;</code></td>
-                        <td><code>#id_name{}</code></td>
-                    </tr>
-                    <tr>
-                        <td>Class</td>
-                        <td>Las clases se pueden utilizar en multiples elementos.</td>
-                        <td><code>&lt;tag class="class_name"&gt;</code></td>
-                        <td><code>.class_name{}</code></td>
-                    </tr>
-                </table>
+        <table border="solid">
+            <tr>
+                <th>Selector</th>
+                <th>Descripción</th>
+                <th>Identificación</th>
+                <th>Utilización</th>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Un mismo ID solo lo debe tener un elemento por documento.</td>
+                <td><code>&lt;tag id="id_name"&gt;</code></td>
+                <td><code>#id_name{}</code></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Las clases se pueden utilizar en multiples elementos.</td>
+                <td><code>&lt;tag class="class_name"&gt;</code></td>
+                <td><code>.class_name{}</code></td>
+            </tr>
+        </table>
 
-                <p>Para utilizarlos en estilos se requiere una hoja de estilos externa o la etiqueta <code>&lt;style&gt;</code> dentro de <code>&lt;head&gt;</code>.</p>
+        <p>Para utilizarlos en estilos se requiere una hoja de estilos externa o la etiqueta <code>&lt;style&gt;</code> dentro de <code>&lt;head&gt;</code>.</p>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_html5.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_html5.png" alt="HTML" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">&lt;!--Selector ID--&gt;</span>
 &lt;<span class="tag_color">p</span> <span class="attribute_color">id</span>=<span class="value_color">"parrafoUnico"</span>&gt;Elemento unico&lt;/<span class="tag_color">p</span>&gt;
@@ -88,7 +86,7 @@
 &lt;<span class="tag_color">p</span> <span class="attribute_color">class</span>=<span class="value_color">"parrafoMultiple"</span>&gt;Elemento multiple 1&lt;/<span class="tag_color">p</span>&gt;
 &lt;<span class="tag_color">p</span> <span class="attribute_color">class</span>=<span class="value_color">"parrafoMultiple"</span>&gt;Elemento multiple 2&lt;/<span class="tag_color">p</span>&gt;
 </pre>
-                    <figure class="build"><img src="../CSS/images/icon_css3.png" width="3%"></figure>
+            <figure class="build"><img src="../CSS/images/icon_css3.png" alt="CSS" width="3%"></figure>
 <pre class="code_box">
 <span class="attribute_color">#parrafoUnico</span>{
     <span class="style_color">width: fit-content</span>;
@@ -105,21 +103,19 @@
     <span class="style_color">text-align: center</span>;
 }
 </pre>
-                </div>
+        </div>
 
-                <div id="parrafos">    
-                    <p id="parrafoUnico">¡Hola mundo único!</p>
-                    <br>
-                    <p class="parrafoMultiple">¡Hola mundo múltiple 1!</p>
-                    <p class="parrafoMultiple">¡Hola mundo múltiple 2!</p>
-                </div>
-            </section>
+        <div id="parrafos">    
+            <p id="parrafoUnico">¡Hola mundo único!</p>
+            <br>
+            <p class="parrafoMultiple">¡Hola mundo múltiple 1!</p>
+            <p class="parrafoMultiple">¡Hola mundo múltiple 2!</p>
+        </div>
 
-            <section>
-                <h2>Etiquetas semanticas</h2>
+        <h2>Etiquetas semanticas</h2>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_html5.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_html5.png" alt="HTML" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">&lt;!--El &lt;header&gt; está predefinido para guardar la información principal del sitio (nombre, logo y menú de navegación)--&gt;</span>
 &lt;<span class="tag_color">header</span>&gt;
@@ -133,22 +129,22 @@
     &lt;/<span class="tag_color">nav</span>&gt;
 &lt;/<span class="tag_color">header</span>&gt;
 </pre>
-                </div>
+        </div>
 
-                <div id="header_example">
-                    <figure><img src="images/happy.png" alt="Logo"></figure>
-                    <h3><i>WEB<br>DE<br>PRUEBA</i></h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#noticias">Noticias</a></li>
-                            <li><a href="#contacto">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div id="header_example">
+            <figure><img src="images/happy.png" alt="Logo"></figure>
+            <h3><i>WEB<br>DE<br>PRUEBA</i></h3>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_html5.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_html5.png" alt="HTML" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">&lt;!--El &lt;main&gt; incluye todo el contenido del sitio--&gt;</span>
 &lt;<span class="tag_color">main</span>&gt;
@@ -159,60 +155,58 @@
     &lt;/<span class="tag_color">section</span>&gt;
 &lt;/<span class="tag_color">main</span>&gt;
 </pre>
-                </div>
+        </div>
 
-                <div id="test_page">    
-                    <section id="inicio">
-                        <h2>Inicio</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eius. Nam vero, alias quod rerum, vitae tenetur saepe inventore dolorum maxime numquam! Est commodi, velit ullam eaque officia iusto provident.</p>
-                    </section>
+        <div id="test_page">    
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eius. Nam vero, alias quod rerum, vitae tenetur saepe inventore dolorum maxime numquam! Est commodi, velit ullam eaque officia iusto provident.</p>
+            </section>
 
-                    <section id="noticias">
-                        <h2>Noticias</h2>
-                        <article>
-                            <h3>Titulo de la noticia 1</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem sequi optio temporibus libero nesciunt! Cum veniam, magni culpa molestiae error dignissimos repellat a libero ea ullam recusandae vel dolores?</p>
-                        </article>
-                        <article>
-                            <h3>Titulo de la noticia 2</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </article>
-                    </section>
+            <section id="noticias">
+                <h2>Noticias</h2>
+                <article>
+                    <h3>Titulo de la noticia 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem sequi optio temporibus libero nesciunt! Cum veniam, magni culpa molestiae error dignissimos repellat a libero ea ullam recusandae vel dolores?</p>
+                </article>
+                <article>
+                    <h3>Titulo de la noticia 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </section>
 
-                    <section id="contacto">
-                        <h2>Contacto</h2>
-                        <form>
-                            <label for="">Nombre</label>
-                            <input type="text">
-                            <label for="">Correo</label>
-                            <input type="email">
-                            <input type="submit" value="Enviar" id="send">
-                        </form>
-                    </section>
-                </div>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="">Nombre</label>
+                    <input type="text">
+                    <label for="">Correo</label>
+                    <input type="email">
+                    <input type="submit" value="Enviar" id="send">
+                </form>
+            </section>
+        </div>
 
-                <div class="boxes_content">
-                    <figure class="build"><img src="images/icon_html5.png" width="3%"></figure>
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_html5.png" alt="HTML" width="3%"></figure>
 <pre class="code_box">
 <span class="comment_color">&lt;!--El &lt;footer&gt; representa un pie de página del sitio--&gt;</span>
 &lt;<span class="tag_color">footer</span>&gt;
     Contenido
 &lt;/<span class="tag_color">footer</span>&gt;
 </pre>
-                </div>
+        </div>
 
-                <div id="test_page_f">
-                    <footer>
-                        Todos los derechos reservados por la web de prueba.
-                    </footer>
-                </div>
-            </section>
-        </section>
+        <div id="test_page_f">
+            <footer>
+                Todos los derechos reservados por la web de prueba.
+            </footer>
+        </div>
     </main>
 </body>
 </html>
