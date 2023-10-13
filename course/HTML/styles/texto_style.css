@@ -33,3 +33,10 @@ figure{
     font-style: italic;
     color: #777;
 }
+
+#list{
+    width: fit-content;
+    margin: auto;
+    border: solid;
+    padding-right: 20px;
+}

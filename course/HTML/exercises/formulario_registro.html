@@ -51,10 +51,10 @@
     <main>
         <h2>Formulario de inicio de sesión</h2>
         <form>
-            <label for="">Usuario</label>
-            <input type="text">
-            <label for="">Contraseña</label>
-            <input type="password">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password">
             <input type="submit" value="Iniciar sesión"><br>
         </form>
 
@@ -62,49 +62,49 @@
         <form>
             <table align="center">
                 <tr>
-                    <td><label for="">Nombre</label></td>
-                    <td><label for="">Apellido</label></td>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><label for="apellido">Apellido</label></td>
                 </tr>
                 <tr>
-                    <td><input type="text" required></td>
-                    <td><input type="text" required></td>
+                    <td><input type="text" id="nombre" required></td>
+                    <td><input type="text" id="apellido" required></td>
                 </tr>
                 <tr>
-                    <td><label for="">Tipo de documento</label></td>
-                    <td><label for="">Documento</label></td>
+                    <td><label for="tipoDocumento">Tipo de documento</label></td>
+                    <td><label for="documento">Documento</label></td>
                 </tr>
                 <tr>
                     <td>
-                        <select required>
+                        <select id="tipoDocumento" required>
                             <option value=""></option>
                             <option value="RC">Registro civil</option>
                             <option value="TI">Tarjeta de identidad</option>
                             <option value="CC">Cedula de ciudadania</option>
                         </select>
                     </td>
-                    <td><input type="number" required></td>
+                    <td><input type="number" id="documento" required></td>
                 </tr>
                 <tr>
-                    <td><label for="">Fecha de nacimiento</label></td>
+                    <td><label for="fechaNacimiento">Fecha de nacimiento</label></td>
                 </tr>
                 <tr>
-                    <td><input type="date" required><br></td>
+                    <td><input type="date" id="fechaNacimiento" required><br></td>
                 </tr>
                 <tr>
-                    <td><label for="">Correo electrónico</label></td>
-                    <td><label for="">Repetir correo electrónico</label></td>
+                    <td><label for="correo">Correo electrónico</label></td>
+                    <td><label for="rCorreo">Repetir correo electrónico</label></td>
                 </tr>
                 <tr>
-                    <td><input type="email" required><br></td>
-                    <td><input type="email" required><br></td>
+                    <td><input type="email" id="correo" required><br></td>
+                    <td><input type="email" id="rCorreo" required><br></td>
                 </tr>
                 <tr>
-                    <td><label for="">Contraseña</label></td>
-                    <td><label for="">Repetir contraseña</label></td>
+                    <td><label for="contraseña">Contraseña</label></td>
+                    <td><label for="rContraseña">Repetir contraseña</label></td>
                 </tr>
                 <tr>
-                    <td><input type="password" required><br></td>
-                    <td><input type="password" required><br></td>
+                    <td><input type="password" id="contraseña" required><br></td>
+                    <td><input type="password" id="rContraseña" required><br></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" required>Acepto terminos<br>y condiciones.</td>
@@ -120,10 +120,10 @@
 <pre class="code_box">
 &lt;<span class="tag_color">h2</span>&gt;Formulario de inicio de sesión&lt;/<span class="tag_color">h2</span>&gt;
 &lt;<span class="tag_color">form</span>&gt;
-    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Usuario&lt;/<span class="tag_color">label</span>&gt;
-    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span>&gt;
-    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;
-    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"usuario"</span>&gt;Usuario&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"usuario"</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"password"</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">id</span>=<span class="value_color">"password"</span>&gt;
     &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"submit"</span> <span class="attribute_color">value</span>=<span class="value_color">"Iniciar sesión"</span>&gt;&lt;<span class="tag_color">br</span>&gt;
 &lt;/<span class="tag_color">form</span>&gt;
 
@@ -131,49 +131,49 @@
 &lt;<span class="tag_color">form</span>&gt;
     &lt;<span class="tag_color">table</span> <span class="attribute_color">align</span>=<span class="value_color">"center"</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Nombre&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Apellido&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"nombre"</span>&gt;Nombre&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"apellido"</span>&gt;Apellido&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"nombre"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"apellido"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Tipo de documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"tipoDocumento"</span>&gt;Tipo de documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"documento"</span>&gt;Documento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
             &lt;<span class="tag_color">td</span>&gt;
-                &lt;<span class="tag_color">select</span> <span class="attribute_color">required</span>&gt;
+                &lt;<span class="tag_color">select</span> <span class="attribute_color">id</span>=<span class="value_color">"tipoDocumento"</span> <span class="attribute_color">required</span>&gt;
                     &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">""</span>&gt;&lt;/<span class="tag_color">option</span>&gt;
                     &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"RC"</span>&gt;Registro civil&lt;/<span class="tag_color">option</span>&gt;
                     &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"TI"</span>&gt;Tarjeta de identidad&lt;/<span class="tag_color">option</span>&gt;
                     &lt;<span class="tag_color">option</span> <span class="attribute_color">value</span>=<span class="value_color">"CC"</span>&gt;Cedula de ciudadania&lt;/<span class="tag_color">option</span>&gt;
                 &lt;/<span class="tag_color">select</span>&gt;
             &lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"number"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"number"</span> <span class="attribute_color">id</span>=<span class="value_color">"documento"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Fecha de nacimiento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"fechaNacimiento"</span>&gt;Fecha de nacimiento&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"date"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"date"</span> <span class="attribute_color">id</span>=<span class="value_color">"fechaNacimiento"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Repetir correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"correo"</span>&gt;Correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"rCorreo"</span>&gt;Repetir correo electrónico&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">id</span>=<span class="value_color">"correo"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"email"</span> <span class="attribute_color">id</span>=<span class="value_color">"rCorreo"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Repetir contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"contraseña"</span>&gt;Contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"rContraseña"</span>&gt;Repetir contraseña&lt;/<span class="tag_color">label</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
-            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">id</span>=<span class="value_color">"contraseña"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
+            &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"password"</span> <span class="attribute_color">id</span>=<span class="value_color">"rContraseña"</span> <span class="attribute_color">required</span>&gt;&lt;/<span class="tag_color">td</span>&gt;
         &lt;/<span class="tag_color">tr</span>&gt;
         &lt;<span class="tag_color">tr</span>&gt;
             &lt;<span class="tag_color">td</span>&gt;&lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"checkbox"</span> <span class="attribute_color">required</span>&gt;Acepto terminos&lt;<span class="tag_color">br</span>&gt;y condiciones.&lt;/<span class="tag_color">td</span>&gt;

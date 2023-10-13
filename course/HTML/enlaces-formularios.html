@@ -81,6 +81,7 @@
 <span class="comment_color">&lt;!--Etiqueta de formulario--&gt;</span>
 &lt;<span class="tag_color">form</span>&gt;
     <span class="comment_color">&lt;!--Representa una etiqueta--&gt;</span>
+    <span class="comment_color">&lt;!--for utiliza el id de un elemento para referenciarlo al seleccionar la etiqueta--&gt;</span>
     &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">""</span>&gt;Texto a mostrar&lt;/<span class="tag_color">label</span>&gt;
     <span class="comment_color">&lt;!--Entrada de formulario--&gt;</span>
     <span class="comment_color">&lt;!--type="text, number, date, email, password, checkbox, radio, file, button, submit"--&gt;</span>
@@ -115,13 +116,13 @@
                     </td>
                     <td><textarea cols="20" rows="5" placeholder="Ingrese un texto"></textarea></td>        
                     <td>
-                        <label for="">Opción 1</label>
-                        <input type="radio" name="Opción 1">
-                        <label for="">Opción 2</label>
-                        <input type="radio" name="Opción 1">
+                        <label for="radio_1">Opción 1</label>
+                        <input type="radio" name="Opción 1" id="radio_1">
+                        <label for="radio_2">Opción 2</label>
+                        <input type="radio" name="Opción 1" id="radio_2">
                         <br><br>
-                        <label for="">Acepto</label>
-                        <input type="checkbox">
+                        <label for="checkbox">Acepto</label>
+                        <input type="checkbox" id="checkbox">
                         <br><br>
                         <input type="submit" value="Enviar">
                     </td>
