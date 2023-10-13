@@ -1,0 +1,12 @@
+form{
+	width: fit-content;
+	margin: auto;
+	border: solid;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+form #enviar{
+	margin-top: 15px;
+	grid-column: 1/3;
+}

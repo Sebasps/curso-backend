@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="images/icon_js.png"/>
     <link rel="stylesheet" href="../../styles/nav_style.css"/>
     <link rel="stylesheet" href="../../styles/code_style.css"/>
+    <link rel="stylesheet" href="styles/local_style.css"/>
+
 </head>
 <body>
     <header>
@@ -50,18 +52,100 @@
     </header>
     <main>
         <h1>LocalStorage</h1>
-        <p>El localstorage es la manera en la que podemos guardar información de manera local</p>
-        <p id="comida"></p>
+        <p>El LocalStorage tiene la función de almacenar información de manera local indefinidamente hasta que se limpien los datos del navegador.</p>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
+<pre class="code_box">
+<span class="comment_color">Inserta información en el LocalStorage</span>
+localStorage.<span class="style_color">setItem</span>(<span class="value_color">"key_name"</span>, value)
+<span class="comment_color">Extrae información del LocalStorage</span>
+<span class="tag_color">let</span> information <span class="tag_color">=</span> localStorage.<span class="style_color">getItem</span>(<span class="value_color">"key_name"</span>)
+</pre>
+        </div>
+
+        <h2>Ejemplo: Almacenamiento y visualización de datos</h2>
+
         <form>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre"><br>
+            <input type="text" id="nombre">
             <label for="apellido">Apellido</label>
-            <input type="text" id="apellido"><br>
+            <input type="text" id="apellido">
             <label for="fechaNacimiento">Fecha de nacimiento</label>
-            <input type="date" id="fecha">
+            <input type="date" id="fechaNacimiento">
             <input type="button" id="enviar" value="Enviar">
         </form>
         <ul id="listar-usuarios"></ul>
+
+        <div class="boxes_content">
+            <figure class="build"><img src="../HTML/images/icon_html5.png" alt="HTML" width="3%"></figure>
+<pre class="code_box">
+&lt;<span class="tag_color">form</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"nombre"</span>&gt;Nombre&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"nombre"</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"apellido"</span>&gt;Apellido&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"apellido"</span>&gt;
+    &lt;<span class="tag_color">label</span> <span class="attribute_color">for</span>=<span class="value_color">"fechaNacimiento"</span>&gt;fechaNacimiento&lt;/<span class="tag_color">label</span>&gt;
+    &lt;<span class="tag_color">input</span> <span class="attribute_color">type</span>=<span class="value_color">"text"</span> <span class="attribute_color">id</span>=<span class="value_color">"fechaNacimiento"</span>&gt;
+&lt;/<span class="tag_color">form</span>&gt;
+&lt;<span class="tag_color">ul</span> <span class="attribute_color">type</span>=<span class="value_color">"listar-usuarios"</span>&gt;&lt;/<span class="tag_color">ul</span>&gt;
+</pre>
+
+            <figure class="build"><img src="images/icon_js.png" alt="JS" width="3%"></figure>
+<pre class="code_box">
+<span class="tag_color">let</span> nombre <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"nombre"</span>)
+<span class="tag_color">let</span> apellido <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"apellido"</span>)
+<span class="tag_color">let</span> fechaNacimiento <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"fechaNacimiento"</span>)
+<span class="tag_color">let</span> botonEnviar <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"botonEnviar"</span>)
+
+<span class="tag_color">class</span> <span class="attribute_color">Usuarios</span>{
+    <span class="attribute_color">constructor</span>(<span class="parameter_color">nombre</span>, <span class="parameter_color">apellido</span>, <span class="parameter_color">fechaNacimiento</span>){
+        <span class="parameter_color">this</span>.nombre <span class="tag_color">=</span> nombre
+        <span class="parameter_color">this</span>.apellido <span class="tag_color">=</span> apellido
+        <span class="parameter_color">this</span>.fechaNacimiento <span class="tag_color">=</span> fechaNacimiento
+    }
+}
+
+botonEnviar.<span class="style_color">addEventListener</span>(<span class="value_color">"click"</span>, <span class="tag_color">function</span>(){
+    <span class="tag_color">let</span> valorNombre <span class="tag_color">=</span> nombre.value
+    <span class="tag_color">let</span> valorApellido <span class="tag_color">=</span> apellido.value
+    <span class="tag_color">let</span> valorFechaNacimiento <span class="tag_color">=</span> fechaNacimiento.value
+
+    <span class="tag_color">const</span> usuario <span class="tag_color">new</span> Usuarios(valorNombre, valorApellido, valorFechaNacimiento)
+    <span class="tag_color">let</span> usuarios <span class="tag_color">=</span> []
+
+    <span class="tag_color">let</span> localUsuarios <span class="tag_color">=</span> localStorage.<span class="style_color">getItem</span>(<span class="value_color">"usuarios"</span>)
+
+    <span class="tag_color">let</span>(localUsuarios){
+        usuarios <span class="tag_color">=</span> <span class="style_color">JSON</span>.<span class="style_color">parse</span>(localUsuarios)
+    }
+    usuarios.<span class="style_color">push</span>(usuario)
+
+    localStorage.<span class="style_color">setItem</span>(<span class="value_color">"usuarios"</span>, <span class="style_color">JSON</span>.<span class="style_color">stringify</span>(usuarios))
+    <span class="style_color">alert</span>(<span class="value_color">"Usuario registrado"</span>)
+})
+
+<span class="tag_color">const</span> <span class="attribute_color">mostrarUsuarios</span> <span class="tag_color">=</span> <span class="tag_color">function</span>(){
+    <span class="tag_color">let</span> usuarios <span class="tag_color">=</span> []
+    <span class="tag_color">let</span> localUsuarios <span class="tag_color">=</span> localStorage.<span class="style_color">getItem</span>(<span class="value_color">"usuarios"</span>)
+    <span class="tag_color">if</span> (localUsuarios){
+        usuarios <span class="tag_color">=</span> <span class="style_color">JSON</span>.<span class="style_color">parse</span>(localUsuarios)
+    }
+    <span class="tag_color">let</span> listaUsuarios <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">getElementById</span>(<span class="value_color">"listar-usuarios"</span>)
+    usuarios.<span class="style_color">forEach</span>(<span class="parameter_color">usuario</span> <span class="tag_color">=></span> {
+        <span class="comment_color">//createElement crea un elemento HTML desde JavaScript</span>
+        <span class="tag_color">let</span> datoUsuario <span class="tag_color">=</span> <span class="style_color">document</span>.<span class="style_color">createElement</span>(<span class="value_color">"li"</span>)
+        datoUsuario.textContent <span class="tag_color">=</span> <span class="value_color">`Nombre:</span> ${usuario.nombre} <span class="value_color">- Apellido:</span> ${usuario.apellido} <span class="value_color">- Fecha nacimiento:</span> ${usuario.fecha}<span class="value_color">`</span>
+        <span class="comment_color">//appendChild permite agregar un elemento HTML desde JavaScript</span>
+        listaUsuarios.<span class="style_color">appendChild</span>(datoUsuario)
+    })
+}
+
+<span class="style_color">mostrarUsuarios</span>()
+</pre>
+        </div>
+
     </main>
+    <script src="scripts/localstorage.js"></script>
 </body>
 </html>
